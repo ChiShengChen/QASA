@@ -1,7 +1,9 @@
-# QASA: Quantum Assisted Sequence Analysis
+# QASA: Quantum Adaptive Self-Attention for Quantum Transformer Models 
 
 ## Overview
-QASA (Quantum Assisted Sequence Analysis) is an innovative hybrid quantum-classical model designed to improve time series prediction tasks. By leveraging the power of quantum computing principles, QASA demonstrates superior predictive capabilities compared to traditional classical models, particularly for complex time-varying systems such as damped oscillators.
+QASA (Quantum Adaptive Self-Attention) is an innovative hybrid quantum-classical model designed to improve time series prediction tasks. By leveraging the power of quantum computing principles, QASA demonstrates superior predictive capabilities compared to traditional classical models, particularly for complex time-varying systems such as damped oscillators.
+![image](https://github.com/user-attachments/assets/e419e626-649f-4a01-b5b4-a51fc4e6961d)
+
 
 ## Key Advantages of QASA
 
