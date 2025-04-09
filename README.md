@@ -99,3 +99,16 @@ python transformer_attention_damped.py
 QASA represents a significant step forward in leveraging quantum computing principles for practical machine learning applications. The hybrid approach demonstrates that even with today's quantum computing capabilities, we can achieve meaningful improvements over classical methods in predicting complex time series data.
 
 The results suggest that as quantum hardware continues to advance, hybrid quantum-classical models like QASA will likely offer even greater advantages in accuracy, efficiency, and capability for a wide range of predictive modeling tasks. 
+
+## Citation
+
+If you use this code for your research, please cite:
+
+```
+@article{chen2025qasa,
+  title={Quantum Adaptive Self-Attention for Quantum Transformer Models},
+  author={Chen, Chi-Sheng and En-Jui Kuo},
+  journal={arXiv preprint arXiv:2504.05336},
+  year={2025}
+}
+```
