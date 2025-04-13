@@ -64,7 +64,7 @@ QASA demonstrates several advantages over the classical implementations:
 
 ## QASA v1 vs QASA v2 Comparison
 
-| Component                        | QASA v1                                                                 | QASA v2                                                                                      | Improvement Description                                                                 |
+| Component                        | QASA v1 (quantum_v4_damped.py)                                  | QASA v2 (qasa_v2_damped.py)                                                                    | Improvement Description                                                                 |
 |----------------------------------|------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
 | **Normalization**                | `BatchNorm1d` in `QuantumLayer`                                        | `LayerNorm` in `QuantumLayer`                                                               | LayerNorm is more stable for Transformer-style models, especially with small batch sizes. |
 | **Weight Initialization**        | None                                                                    | `Kaiming` initialization for all linear layers                                               | Ensures better training stability and faster convergence.                                |
