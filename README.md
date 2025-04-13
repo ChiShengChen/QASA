@@ -62,6 +62,26 @@ QASA demonstrates several advantages over the classical implementations:
 2. **Convergence Rate**: Faster convergence to optimal solutions during training
 3. **Pattern Recognition**: Better ability to capture the underlying patterns of damped oscillation
 
+## QASA v1 vs QASA v2 Comparison
+
+| Component                        | QASA v1                                                                 | QASA v2                                                                                      | Improvement Description                                                                 |
+|----------------------------------|------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
+| **Normalization**                | `BatchNorm1d` in `QuantumLayer`                                        | `LayerNorm` in `QuantumLayer`                                                               | LayerNorm is more stable for Transformer-style models, especially with small batch sizes. |
+| **Weight Initialization**        | None                                                                    | `Kaiming` initialization for all linear layers                                               | Ensures better training stability and faster convergence.                                |
+| **Dropout**                      | Not used                                                                | Added in embedding and FFN layers                                                            | Helps reduce overfitting and improves generalization.                                    |
+| **QuantumLayer Skip Connection** | Direct residual connection, no shape check                              | Skip connection with shape check and warning if mismatched                                  | Prevents silent errors when dimensions mismatch.                                          |
+| **Optimizer**                    | `AdamW`, lr = 1e-4, no weight decay                                     | `AdamW`, lr = 5e-5, with `weight_decay=1e-4`                                                 | Lower learning rate and weight decay improve convergence and regularization.             |
+| **Scheduler**                    | `CosineAnnealingLR`                                                    | `CosineAnnealingLR`                                                                          | Same scheduling method in both.                                                           |
+| **Embedding Layer**              | `Linear` + `LayerNorm`                                                 | `Linear` + `LayerNorm` + `Dropout`                                                           | Additional dropout improves training robustness.                                          |
+| **QuantumLayer Input**           | `Tanh` → `BatchNorm` → `TorchLayer`                                    | `Tanh` → `LayerNorm` → `TorchLayer`                                                          | Modernized normalization strategy.                                                        |
+| **QuantumLayer Output**          | `x + output`                                                           | `x + output` (if dimensions match), else return output with warning                         | Improves logical safety of skip connections.                                              |
+| **FFN Layers in Encoder**        | No dropout                                                             | Dropout added                                                                                | Improves regularization.                                                                 |
+| **CSV Logger**                   | Present                                                                 | Present                                                                                      | Same functionality.                                                                      |
+| **Plotting and Logging**         | Enabled                                                                 | Enabled                                                                                      | Same functionality.                                                                      |
+| **Model Flexibility**            | Fixed structure                                                         | Supports `dropout_rate` argument and better modularity                                       | Easier to tune and extend.                                                               |
+
+
+
 ## Getting Started
 
 ### Prerequisites
