@@ -9,6 +9,11 @@ QASA (Quantum Adaptive Self-Attention) is an innovative hybrid quantum-classical
 ![image](https://github.com/user-attachments/assets/e419e626-649f-4a01-b5b4-a51fc4e6961d)
 
 
+## 📢 News / Updates
+
+- 🔥 **[2025-04-13]**: Released **QASA v2** with improved stability, LayerNorm, Kaiming init, and dropout support.
+
+
 ## Key Advantages of QASA
 
 - **Enhanced Prediction Accuracy**: QASA's hybrid architecture combines the representational power of quantum circuits with classical transformer models to achieve improved prediction accuracy over purely classical approaches.
