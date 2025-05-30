@@ -6,7 +6,7 @@
 
 ## Overview
 QASA (Quantum Adaptive Self-Attention) is an innovative hybrid quantum-classical model designed to improve time series prediction tasks. By leveraging the power of quantum computing principles, QASA demonstrates superior predictive capabilities compared to traditional classical models, particularly for complex time-varying systems such as damped oscillators.
-![image](https://github.com/user-attachments/assets/e419e626-649f-4a01-b5b4-a51fc4e6961d)
+
 ![image](https://github.com/user-attachments/assets/c78da79a-9325-4378-8d28-6e9bbcc7ca9b)
 
 
