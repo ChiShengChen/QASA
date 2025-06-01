@@ -1,41 +1,41 @@
 # qml-timeseries-bench
+A simple and extensible benchmarking suite for quantum/classical time series tasks. It supports time series data generation, training, evaluation, and comparison for both Quantum Machine Learning (QML) and classical models.
 
-一個簡單、可擴充的量子/經典時序任務評測套件，支援 QML (Quantum Machine Learning) 與經典模型的時序資料生成、訓練、評估與比較。
 
-## 特色
-- 內建多種經典與量子時序任務（waveform、trend+seasonality、piecewise regime、token learning...）
-- 任務與模型分離，任務可重用於不同模型
-- 統一 API：`get_task` 取得任務，`Task.generate_data` 產生資料，`Task.evaluate` 評估
-- 支援自動化訓練流程與簡單範例
+## Features
+- Built-in support for various classical and quantum time series tasks (e.g., waveform, trend + seasonality, piecewise regime, token learning, etc.)
+- Decoupled task and model interfaces – tasks can be reused across different models
+- Unified API: Use `get_task` to retrieve a task, `Task.generate_data` to generate data, and `Task.evaluate` to compute performance
+- Supports automated training pipelines and simple examples
 
-## 安裝
+## Install
 
 ```bash
 pip install -e .
 ```
 
-## 快速開始
+## Quick Start
 
-### 1. 任務資料生成與評估
+### 1. Generate and evaluate task data
 ```python
 from quantum_rwkv import get_task
 
 task = get_task('classical_waveform')
 X_train, Y_train, X_test_seed, Y_test_true_full = task.generate_data()
-# ...模型訓練與預測...
+# ...model training and prediction...
 mae, mse = task.evaluate(y_true, y_pred)
 ```
 
-### 2. 範例：經典 waveform 任務 + RWKV
-見 `quantum_rwkv/example_classical_waveform.py`
+### 2. Example: Classical waveform task + RWKV
+See `quantum_rwkv/example_classical_waveform.py`
 
-### 3. 範例：token 任務 + RWKV
-見 `quantum_rwkv/example_classical_token.py`
+### 3. Example: Token learning task + RWKV
+See `quantum_rwkv/example_classical_token.py`
 
-### 4. 範例：量子 piecewise regime 任務 + QuantumRWKV
-見 `quantum_rwkv/example_quantum_piecewise_regime.py`
+### 4. Example: Quantum piecewise regime task + QuantumRWKV
+See `quantum_rwkv/example_quantum_piecewise_regime.py`
 
-## 支援的任務
+## Supported Tasks
 - classical_waveform
 - classical_trend_seasonality_noise
 - classical_square_triangle_wave
@@ -57,10 +57,10 @@ mae, mse = task.evaluate(y_true, y_pred)
 - quantum_chaotic_logistic
 - quantum_arma
 
-## 擴充任務
-1. 在 `quantum_rwkv/tasks/` 新增任務檔案，實作 `Task` class 的 `generate_data` 與 `evaluate`。
-2. 在 `quantum_rwkv/tasks/__init__.py` 的 `task_registry` 註冊新任務。
+## Extending with New Tasks
+1. Add a new task file under quantum_rwkv/tasks/ and implement the Task class with generate_data and evaluate methods.
+2. Register the new task in task_registry inside quantum_rwkv/tasks/__init__.py.
 
-## 命名由來
+## Naming
 **qml-timeseries-bench** = Quantum Machine Learning + Time Series + Benchmark
 
