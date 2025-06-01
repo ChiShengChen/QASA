@@ -64,6 +64,3 @@ mae, mse = task.evaluate(y_true, y_pred)
 ## 命名由來
 **qml-timeseries-bench** = Quantum Machine Learning + Time Series + Benchmark
 
----
-
-如需更多範例、API 或任務擴充教學，請參考原始碼或提出 issue！
