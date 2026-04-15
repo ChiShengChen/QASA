@@ -12,7 +12,8 @@ QASA (Quantum Adaptive Self-Attention) is an innovative hybrid quantum-classical
 
 ## 📢 News / Updates
 
-- 🔥 **[2025-05-21]**: Add Benchmark files.
+- 🔥 **[2026-03-15]**: Ablation study completed. Q@3 (last-layer quantum) is best for chaotic dynamics; Q@2 is best for damped oscillator; 0Q (classical) remains best for square wave. More quantum layers does not help.
+- **[2025-05-21]**: Add Benchmark files.
 - **[2025-04-13]**: Released **QASA v2** with improved stability, LayerNorm, Kaiming init, and dropout support.
 
 
@@ -68,6 +69,22 @@ QASA demonstrates several advantages over the classical implementations:
 1. **Prediction Accuracy**: Lower MSE and MAE values on test data compared to classical models
 2. **Convergence Rate**: Faster convergence to optimal solutions during training
 3. **Pattern Recognition**: Better ability to capture the underlying patterns of damped oscillation
+
+### Ablation Study: Quantum Layer Position & Count
+
+Results on three representative tasks (seed=42, hidden\_dim=64, 200 epochs):
+
+| Configuration | Quantum Layers | Chaotic Logistic (MAE/MSE) | Damped Osc. (MAE/MSE) | Square Wave (MAE/MSE) |
+|---|---|---|---|---|
+| 0Q (Classical) | None | 0.3594 / 0.1991 | 0.1193 / 0.0198 | **0.6988 / 1.2549** |
+| Q@0 (First)    | {0}     | 0.3808 / 0.2092 | 0.0966 / 0.0138 | 0.7618 / 1.0343 |
+| Q@1 (Second)   | {1}     | 0.3740 / 0.2033 | 0.1924 / 0.0511 | 0.7132 / 1.3366 |
+| Q@2 (Third)    | {2}     | 0.4134 / 0.2437 | **0.0386 / 0.0020** | 0.8974 / 0.8941 |
+| Q@3 (Last)     | {3}     | **0.3499 / 0.1832** | 0.1244 / 0.0206 | 0.7280 / 1.2989 |
+| 2Q (Last two)  | {2,3}   | 0.3738 / 0.2090 | 0.1244 / 0.0225 | 0.7389 / 1.0912 |
+| 4Q (All)       | {0,1,2,3} | 0.3753 / 0.2046 | 0.1532 / 0.0285 | 0.9441 / 0.9186 |
+
+Key findings: (1) **Position matters more than count** — Q@3 is best for chaotic dynamics, Q@2 for smooth oscillations. (2) **More quantum layers hurt on square wave** — 4Q is the worst configuration (MAE 0.944 vs classical 0.699). (3) A single quantum layer at the right position maximizes benefit while minimizing overhead.
 
 ## QASA v1 vs QASA v2 Comparison
 

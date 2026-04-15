@@ -1,0 +1,18 @@
+QASA Circuit Analysis Summary
+==================================================
+Qubits (data): 8
+Qubits (total): 9
+Variational layers: 4
+Quantum parameters: 36
+
+Entanglement Entropy (vN, bipartite [0-3]|[4-7+aux]):
+  Mean: 2.2634 ± 0.1196
+  Max possible: 4.00
+  Normalized: 0.5659
+
+Meyer-Wallach Entangling Capability:
+  Q: 0.9849 ± 0.0087
+
+Expressibility (KL-div vs Haar):
+  D_KL: 0.001016
+  Mean fidelity: 0.001971

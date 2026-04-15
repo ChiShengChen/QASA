@@ -1,0 +1,353 @@
+/Users/michael/anaconda3/lib/python3.13/site-packages/pandas/core/computation/expressions.py:22: UserWarning: Pandas requires version '2.10.2' or newer of 'numexpr' (version '2.10.1' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+Device: cpu
+PyTorch: 2.8.0
+PennyLane: 0.42.3
+
+======================================================================
+ABLATION CONFIGURATIONS
+======================================================================
+Config               Quantum Indices      Total Params   Q Layers
+----------------------------------------------------------------------
+pos_Q_first          [0]                       201,405          1
+pos_Q_second         [1]                       201,405          1
+pos_Q_third          [2]                       201,405          1
+pos_Q_last           [3]                       201,405          1
+count_0Q             []                        200,257          0
+count_2Q             [2, 3]                    202,553          2
+count_4Q             [0, 1, 2, 3]              204,849          4
+======================================================================
+
+
+[1/21] Config: pos_Q_first | Task: Chaotic Logistic
+--------------------------------------------------
+  Epoch [20/200] Loss: 0.001995
+  Epoch [40/200] Loss: 0.000662
+  Epoch [60/200] Loss: 0.000318
+  Epoch [80/200] Loss: 0.000250
+  Epoch [100/200] Loss: 0.000173
+  Epoch [120/200] Loss: 0.000118
+  Epoch [140/200] Loss: 0.000095
+  Epoch [160/200] Loss: 0.000085
+  Epoch [180/200] Loss: 0.000077
+  Epoch [200/200] Loss: 0.000068
+  => MAE: 0.380830, MSE: 0.209221, Time: 32103s
+
+[2/21] Config: pos_Q_first | Task: Damped Oscillator
+--------------------------------------------------
+  Epoch [20/200] Loss: 0.016120
+  Epoch [40/200] Loss: 0.006396
+  Epoch [60/200] Loss: 0.004319
+  Epoch [80/200] Loss: 0.002434
+  Epoch [100/200] Loss: 0.001570
+  Epoch [120/200] Loss: 0.001358
+  Epoch [140/200] Loss: 0.000735
+  Epoch [160/200] Loss: 0.000499
+  Epoch [180/200] Loss: 0.000423
+  Epoch [200/200] Loss: 0.000419
+  => MAE: 0.096594, MSE: 0.013773, Time: 49513s
+
+[3/21] Config: pos_Q_first | Task: Square Wave
+--------------------------------------------------
+  Epoch [20/200] Loss: 0.445862
+  Epoch [40/200] Loss: 0.473691
+  Epoch [60/200] Loss: 0.693315
+  Epoch [80/200] Loss: 0.430195
+  Epoch [100/200] Loss: 0.343034
+  Epoch [120/200] Loss: 0.339121
+  Epoch [140/200] Loss: 0.631831
+  Epoch [160/200] Loss: 0.379452
+  Epoch [180/200] Loss: 0.307610
+  Epoch [200/200] Loss: 0.303741
+  => MAE: 0.761767, MSE: 1.034332, Time: 7039s
+
+[4/21] Config: pos_Q_second | Task: Chaotic Logistic
+--------------------------------------------------
+  Epoch [20/200] Loss: 0.001980
+  Epoch [40/200] Loss: 0.000713
+  Epoch [60/200] Loss: 0.000453
+  Epoch [80/200] Loss: 0.000245
+  Epoch [100/200] Loss: 0.000181
+  Epoch [120/200] Loss: 0.000133
+  Epoch [140/200] Loss: 0.000104
+  Epoch [160/200] Loss: 0.000091
+  Epoch [180/200] Loss: 0.000076
+  Epoch [200/200] Loss: 0.000070
+  => MAE: 0.374039, MSE: 0.203304, Time: 7035s
+
+[5/21] Config: pos_Q_second | Task: Damped Oscillator
+--------------------------------------------------
+  Epoch [20/200] Loss: 0.018555
+  Epoch [40/200] Loss: 0.010329
+  Epoch [60/200] Loss: 0.004872
+  Epoch [80/200] Loss: 0.002758
+  Epoch [100/200] Loss: 0.001492
+  Epoch [120/200] Loss: 0.000920
+  Epoch [140/200] Loss: 0.000472
+  Epoch [160/200] Loss: 0.000351
+  Epoch [180/200] Loss: 0.000259
+  Epoch [200/200] Loss: 0.000249
+  => MAE: 0.192367, MSE: 0.051126, Time: 7041s
+
+[6/21] Config: pos_Q_second | Task: Square Wave
+--------------------------------------------------
+  Epoch [20/200] Loss: 0.687920
+  Epoch [40/200] Loss: 0.459490
+  Epoch [60/200] Loss: 0.435801
+  Epoch [80/200] Loss: 0.368417
+  Epoch [100/200] Loss: 0.526773
+  Epoch [120/200] Loss: 0.336913
+  Epoch [140/200] Loss: 0.319850
+  Epoch [160/200] Loss: 0.312938
+  Epoch [180/200] Loss: 0.307347
+  Epoch [200/200] Loss: 0.301750
+  => MAE: 0.713242, MSE: 1.336594, Time: 7305s
+
+[7/21] Config: pos_Q_third | Task: Chaotic Logistic
+--------------------------------------------------
+  Epoch [20/200] Loss: 0.001577
+  Epoch [40/200] Loss: 0.001114
+  Epoch [60/200] Loss: 0.000404
+  Epoch [80/200] Loss: 0.000218
+  Epoch [100/200] Loss: 0.000153
+  Epoch [120/200] Loss: 0.000106
+  Epoch [140/200] Loss: 0.000082
+  Epoch [160/200] Loss: 0.000067
+  Epoch [180/200] Loss: 0.000059
+  Epoch [200/200] Loss: 0.000053
+  => MAE: 0.413400, MSE: 0.243700, Time: 60679s
+
+[8/21] Config: pos_Q_third | Task: Damped Oscillator
+--------------------------------------------------
+  Epoch [20/200] Loss: 0.021695
+  Epoch [40/200] Loss: 0.004743
+  Epoch [60/200] Loss: 0.003004
+  Epoch [80/200] Loss: 0.001775
+  Epoch [100/200] Loss: 0.000938
+  Epoch [120/200] Loss: 0.000553
+  Epoch [140/200] Loss: 0.000327
+  Epoch [160/200] Loss: 0.000241
+  Epoch [180/200] Loss: 0.000211
+  Epoch [200/200] Loss: 0.000192
+  => MAE: 0.038583, MSE: 0.002003, Time: 7180s
+
+[9/21] Config: pos_Q_third | Task: Square Wave
+--------------------------------------------------
+  Epoch [20/200] Loss: 0.536061
+  Epoch [40/200] Loss: 0.619050
+  Epoch [60/200] Loss: 0.437111
+  Epoch [80/200] Loss: 0.655028
+  Epoch [100/200] Loss: 0.348114
+  Epoch [120/200] Loss: 0.339166
+  Epoch [140/200] Loss: 0.343416
+  Epoch [160/200] Loss: 0.369679
+  Epoch [180/200] Loss: 0.316532
+  Epoch [200/200] Loss: 0.315924
+  => MAE: 0.897369, MSE: 0.894144, Time: 7034s
+
+[10/21] Config: pos_Q_last | Task: Chaotic Logistic
+--------------------------------------------------
+  Epoch [20/200] Loss: 0.001711
+  Epoch [40/200] Loss: 0.001109
+  Epoch [60/200] Loss: 0.000388
+  Epoch [80/200] Loss: 0.000283
+  Epoch [100/200] Loss: 0.000193
+  Epoch [120/200] Loss: 0.000143
+  Epoch [140/200] Loss: 0.000135
+  Epoch [160/200] Loss: 0.000094
+  Epoch [180/200] Loss: 0.000085
+  Epoch [200/200] Loss: 0.000075
+  => MAE: 0.349913, MSE: 0.183180, Time: 7012s
+
+[11/21] Config: pos_Q_last | Task: Damped Oscillator
+--------------------------------------------------
+  Epoch [20/200] Loss: 0.018708
+  Epoch [40/200] Loss: 0.008276
+  Epoch [60/200] Loss: 0.004508
+  Epoch [80/200] Loss: 0.002508
+  Epoch [100/200] Loss: 0.001527
+  Epoch [120/200] Loss: 0.001055
+  Epoch [140/200] Loss: 0.000637
+  Epoch [160/200] Loss: 0.000424
+  Epoch [180/200] Loss: 0.000368
+  Epoch [200/200] Loss: 0.000358
+  => MAE: 0.124405, MSE: 0.020561, Time: 41536s
+
+[12/21] Config: pos_Q_last | Task: Square Wave
+--------------------------------------------------
+  Epoch [20/200] Loss: 0.510988
+  Epoch [40/200] Loss: 0.850683
+  Epoch [60/200] Loss: 0.629910
+  Epoch [80/200] Loss: 0.848542
+  Epoch [100/200] Loss: 0.847019
+  Epoch [120/200] Loss: 0.705128
+  Epoch [140/200] Loss: 0.465086
+  Epoch [160/200] Loss: 0.330956
+  Epoch [180/200] Loss: 0.338618
+  Epoch [200/200] Loss: 0.334525
+  => MAE: 0.727986, MSE: 1.298932, Time: 25706s
+
+[13/21] Config: count_0Q | Task: Chaotic Logistic
+--------------------------------------------------
+  Epoch [20/200] Loss: 0.001681
+  Epoch [40/200] Loss: 0.000796
+  Epoch [60/200] Loss: 0.000422
+  Epoch [80/200] Loss: 0.000240
+  Epoch [100/200] Loss: 0.000152
+  Epoch [120/200] Loss: 0.000103
+  Epoch [140/200] Loss: 0.000084
+  Epoch [160/200] Loss: 0.000069
+  Epoch [180/200] Loss: 0.000057
+  Epoch [200/200] Loss: 0.000056
+  => MAE: 0.359388, MSE: 0.199140, Time: 235s
+
+[14/21] Config: count_0Q | Task: Damped Oscillator
+--------------------------------------------------
+  Epoch [20/200] Loss: 0.019295
+  Epoch [40/200] Loss: 0.006469
+  Epoch [60/200] Loss: 0.004770
+  Epoch [80/200] Loss: 0.002669
+  Epoch [100/200] Loss: 0.001952
+  Epoch [120/200] Loss: 0.001314
+  Epoch [140/200] Loss: 0.000749
+  Epoch [160/200] Loss: 0.000526
+  Epoch [180/200] Loss: 0.000481
+  Epoch [200/200] Loss: 0.000464
+  => MAE: 0.119347, MSE: 0.019818, Time: 231s
+
+[15/21] Config: count_0Q | Task: Square Wave
+--------------------------------------------------
+  Epoch [20/200] Loss: 0.592263
+  Epoch [40/200] Loss: 0.477097
+  Epoch [60/200] Loss: 0.387907
+  Epoch [80/200] Loss: 0.382564
+  Epoch [100/200] Loss: 0.371873
+  Epoch [120/200] Loss: 0.333590
+  Epoch [140/200] Loss: 0.312593
+  Epoch [160/200] Loss: 0.576616
+  Epoch [180/200] Loss: 0.376505
+  Epoch [200/200] Loss: 0.350481
+  => MAE: 0.698835, MSE: 1.254858, Time: 231s
+
+[16/21] Config: count_2Q | Task: Chaotic Logistic
+--------------------------------------------------
+  Epoch [20/200] Loss: 0.001983
+  Epoch [40/200] Loss: 0.001042
+  Epoch [60/200] Loss: 0.000513
+  Epoch [80/200] Loss: 0.000282
+  Epoch [100/200] Loss: 0.000174
+  Epoch [120/200] Loss: 0.000113
+  Epoch [140/200] Loss: 0.000150
+  Epoch [160/200] Loss: 0.000064
+  Epoch [180/200] Loss: 0.000051
+  Epoch [200/200] Loss: 0.000050
+  => MAE: 0.373817, MSE: 0.208973, Time: 23635s
+
+[17/21] Config: count_2Q | Task: Damped Oscillator
+--------------------------------------------------
+  Epoch [20/200] Loss: 0.018870
+  Epoch [40/200] Loss: 0.009734
+  Epoch [60/200] Loss: 0.006820
+  Epoch [80/200] Loss: 0.003531
+  Epoch [100/200] Loss: 0.001748
+  Epoch [120/200] Loss: 0.001081
+  Epoch [140/200] Loss: 0.000704
+  Epoch [160/200] Loss: 0.000576
+  Epoch [180/200] Loss: 0.000454
+  Epoch [200/200] Loss: 0.000436
+  => MAE: 0.124416, MSE: 0.022543, Time: 66728s
+
+[18/21] Config: count_2Q | Task: Square Wave
+--------------------------------------------------
+  Epoch [20/200] Loss: 0.439270
+  Epoch [40/200] Loss: 0.401977
+  Epoch [60/200] Loss: 0.409347
+  Epoch [80/200] Loss: 0.337144
+  Epoch [100/200] Loss: 0.845430
+  Epoch [120/200] Loss: 0.366102
+  Epoch [140/200] Loss: 0.358122
+  Epoch [160/200] Loss: 0.341595
+  Epoch [180/200] Loss: 0.328093
+  Epoch [200/200] Loss: 0.326192
+  => MAE: 0.738879, MSE: 1.091219, Time: 13781s
+
+[19/21] Config: count_4Q | Task: Chaotic Logistic
+--------------------------------------------------
+  Epoch [20/200] Loss: 0.001251
+  Epoch [40/200] Loss: 0.000936
+  Epoch [60/200] Loss: 0.000433
+  Epoch [80/200] Loss: 0.000271
+  Epoch [100/200] Loss: 0.000238
+  Epoch [120/200] Loss: 0.000191
+  Epoch [140/200] Loss: 0.000161
+  Epoch [160/200] Loss: 0.000108
+  Epoch [180/200] Loss: 0.000102
+  Epoch [200/200] Loss: 0.000093
+  => MAE: 0.375314, MSE: 0.204569, Time: 60221s
+
+[20/21] Config: count_4Q | Task: Damped Oscillator
+--------------------------------------------------
+  Epoch [20/200] Loss: 0.048458
+  Epoch [40/200] Loss: 0.121023
+  Epoch [60/200] Loss: 0.120140
+  Epoch [80/200] Loss: 0.119883
+  Epoch [100/200] Loss: 0.119377
+  Epoch [120/200] Loss: 0.119097
+  Epoch [140/200] Loss: 0.118845
+  Epoch [160/200] Loss: 0.118663
+  Epoch [180/200] Loss: 0.118553
+  Epoch [200/200] Loss: 0.118518
+  => MAE: 0.153172, MSE: 0.028504, Time: 59395s
+
+[21/21] Config: count_4Q | Task: Square Wave
+--------------------------------------------------
+  Epoch [20/200] Loss: 0.457751
+  Epoch [40/200] Loss: 0.412178
+  Epoch [60/200] Loss: 0.844468
+  Epoch [80/200] Loss: 0.349411
+  Epoch [100/200] Loss: 0.341138
+  Epoch [120/200] Loss: 0.401965
+  Epoch [140/200] Loss: 0.847608
+  Epoch [160/200] Loss: 0.844775
+  Epoch [180/200] Loss: 0.844806
+  Epoch [200/200] Loss: 0.844818
+  => MAE: 0.944094, MSE: 0.918580, Time: 28654s
+
+
+==========================================================================================
+ABLATION RESULTS — POSITION (1 quantum layer)
+==========================================================================================
+Config             Task                          MAE          MSE     Params  Time(s)
+------------------------------------------------------------------------------------------
+pos_Q_first        Chaotic Logistic           0.3808       0.2092    201,405    32103
+pos_Q_first        Damped Oscillator          0.0966       0.0138    201,405    49513
+pos_Q_first        Square Wave                0.7618       1.0343    201,405     7039
+pos_Q_second       Chaotic Logistic           0.3740       0.2033    201,405     7035
+pos_Q_second       Damped Oscillator          0.1924       0.0511    201,405     7041
+pos_Q_second       Square Wave                0.7132       1.3366    201,405     7305
+pos_Q_third        Chaotic Logistic           0.4134       0.2437    201,405    60679
+pos_Q_third        Damped Oscillator          0.0386       0.0020    201,405     7180
+pos_Q_third        Square Wave                0.8974       0.8941    201,405     7034
+pos_Q_last         Chaotic Logistic           0.3499       0.1832    201,405     7012
+pos_Q_last         Damped Oscillator          0.1244       0.0206    201,405    41536
+pos_Q_last         Square Wave                0.7280       1.2989    201,405    25706
+------------------------------------------------------------------------------------------
+
+==========================================================================================
+ABLATION RESULTS — COUNT (varying quantum layers)
+==========================================================================================
+Config             Task                          MAE          MSE     Params  Time(s)
+------------------------------------------------------------------------------------------
+count_0Q           Chaotic Logistic           0.3594       0.1991    200,257      235
+count_0Q           Damped Oscillator          0.1193       0.0198    200,257      231
+count_0Q           Square Wave                0.6988       1.2549    200,257      231
+count_2Q           Chaotic Logistic           0.3738       0.2090    202,553    23635
+count_2Q           Damped Oscillator          0.1244       0.0225    202,553    66728
+count_2Q           Square Wave                0.7389       1.0912    202,553    13781
+count_4Q           Chaotic Logistic           0.3753       0.2046    204,849    60221
+count_4Q           Damped Oscillator          0.1532       0.0285    204,849    59395
+count_4Q           Square Wave                0.9441       0.9186    204,849    28654
+------------------------------------------------------------------------------------------
+
+Results saved to: /Users/michael/QASA/experiments/results/ablation_results_20260315_041020.csv
+Config: hidden_dim=64, layers=4, epochs=200, seed=42, lr=0.0005, seq_len=20

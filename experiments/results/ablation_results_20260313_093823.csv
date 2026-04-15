@@ -1,0 +1,7 @@
+ablation_type,config_name,quantum_indices,n_quantum_layers,task,mae,mse,train_loss,total_params,time_seconds
+position,pos_Q_last,[3],1,Chaotic Logistic,0.284555,0.102633,0.156918,201405,49.1000337600708
+position,pos_Q_last,[3],1,Damped Oscillator,0.135914,0.023514,0.104831,201405,50.97699284553528
+position,pos_Q_last,[3],1,Square Wave,0.834608,0.980019,0.365367,201405,55.09402322769165
+count,count_0Q,[],0,Chaotic Logistic,0.293453,0.104628,0.132664,200257,1.608591079711914
+count,count_0Q,[],0,Damped Oscillator,0.148967,0.027234,0.084152,200257,1.7142581939697266
+count,count_0Q,[],0,Square Wave,0.887078,0.942828,0.343486,200257,1.6828639507293701

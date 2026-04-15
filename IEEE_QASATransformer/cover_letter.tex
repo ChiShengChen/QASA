@@ -1,0 +1,34 @@
+\documentclass[11pt]{letter}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+
+\begin{document}
+
+\begin{letter}{Editorial Board \\ EPJ Quantum Technology \\ Springer}
+
+\opening{Dear Editors,}
+
+We are pleased to submit our manuscript entitled \textbf{``Quantum Adaptive Self-Attention for Quantum Transformer Models''} for consideration in \textit{EPJ Quantum Technology}.
+
+\textbf{Summary.}
+This paper introduces Quantum Adaptive Self-Attention (QASA), a hybrid quantum-classical Transformer architecture for time-series forecasting. Unlike existing quantum sequence models that distribute quantum computation across the entire network, QASA replaces only the value projection in a single encoder layer with a parameterized quantum circuit (PQC), using just 36 trainable quantum parameters. We term this design principle \emph{architectural parsimony}: maximal quantum benefit through minimal, strategically placed quantum integration.
+
+\textbf{Key contributions.}
+\begin{itemize}
+    \item We demonstrate that quantum layer \emph{position} matters more than \emph{count}---a single quantum layer at the optimal position outperforms architectures with 2--4$\times$ more quantum resources, while adding more quantum layers degrades performance.
+    \item We provide a \emph{task-conditional quantum advantage taxonomy}: QASA excels on chaotic, noisy, and trend-dominated signals, while classical Transformers remain superior for clean periodic waveforms.
+    \item Comprehensive comparison against three baselines (Classical Transformer, QLSTM, QnnFormer) across nine synthetic benchmarks and one real-world dataset, supported by statistical significance tests, effect size analysis, and Friedman tests.
+    \item Quantitative circuit analysis shows QASA achieves near-maximal entangling capability ($Q = 0.981$) with fewer CNOT gates than competing architectures, explaining its empirical advantage at the circuit level.
+\end{itemize}
+
+\textbf{Relevance to EPJ Quantum Technology.}
+This work addresses a practical question at the heart of near-term quantum computing: how to integrate quantum resources into classical deep learning architectures effectively and efficiently. Our findings---that minimal quantum integration outperforms deeper quantum designs---have direct implications for NISQ-era algorithm design and quantum hardware resource allocation. The architectural parsimony principle and task-conditional taxonomy offer practitioners actionable guidance for deploying hybrid quantum-classical models.
+
+\textbf{Novelty statement.}
+This manuscript has not been published previously and is not under consideration elsewhere. All authors have approved the manuscript and agree with its submission to \textit{EPJ Quantum Technology}.
+
+\closing{Sincerely,\\[1em]
+Chi-Sheng Chen and En-Jui Kuo}
+
+\end{letter}
+\end{document}

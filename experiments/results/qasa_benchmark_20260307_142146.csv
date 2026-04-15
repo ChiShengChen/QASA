@@ -1,0 +1,3 @@
+Task,Model,MAE,MSE,MAE_Std,MSE_Std
+Damped Oscillator,Classical,0.148133,0.026910,0.000000,0.000000
+Damped Oscillator,QASA,0.089265,0.011197,0.000000,0.000000

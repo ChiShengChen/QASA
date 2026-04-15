@@ -1,0 +1,54 @@
+# === Large binary files ===
+*.zip
+
+# === Paper / LaTeX build artifacts ===
+IEEE_QASATransformer/*.aux
+IEEE_QASATransformer/*.log
+IEEE_QASATransformer/*.out
+IEEE_QASATransformer/*.bbl
+IEEE_QASATransformer/*.blg
+IEEE_QASATransformer/*.fls
+IEEE_QASATransformer/*.fdb_latexmk
+IEEE_QASATransformer/*.synctex.gz
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# === Virtual environments ===
+venv/
+.venv/
+env/
+
+# === Training outputs ===
+checkpoints/
+logs/
+csv_logs/
+lightning_logs/
+*.ckpt
+*.pth
+
+# === Experiment results (regenerable) ===
+results_*/
+quantum_new_v4/
+classical_v4_plots/
+transformer_damped_plots/
+
+# === Benchmark outputs ===
+all_benchmark_results*.csv
+
+# === OS ===
+.DS_Store
+Thumbs.db
+
+# === IDE ===
+.vscode/
+.idea/
+*.swp
+*.swo

@@ -1,0 +1,4 @@
+Circuit,Qubits,Q_Params,1Q_Gates,2Q_Gates,Total_Gates,Expressibility_KL,Entangling_Q,Entangling_Std
+QASA,9,36,83,27,110,0.028677,0.980793,0.013052
+QLSTM,8,32,48,56,104,0.125051,0.710225,0.106178
+QnnFormer,8,24,72,21,94,0.025655,0.883278,0.061114

@@ -1,0 +1,56 @@
+/Users/michael/anaconda3/lib/python3.13/site-packages/pandas/core/computation/expressions.py:22: UserWarning: Pandas requires version '2.10.2' or newer of 'numexpr' (version '2.10.1' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+Device: cpu
+PyTorch: 2.8.0
+PennyLane: 0.42.3
+
+ETTh1.csv already exists at /Users/michael/QASA/experiments/data/ETTh1.csv
+ETTh1 loaded: train=500, val=2880, test=500 windows (subsampled)
+
+============================================================
+Model                            Total    Trainable
+------------------------------------------------------------
+QASA (Quantum)                 201,405      201,405
+Classical Transformer          200,257      200,257
+============================================================
+
+============================================================
+Training Classical Transformer on ETTh1
+============================================================
+  Epoch [20/200] Loss: 0.029585
+  Epoch [40/200] Loss: 0.029241
+  Epoch [60/200] Loss: 0.024295
+  Epoch [80/200] Loss: 0.020204
+  Epoch [100/200] Loss: 0.017401
+  Epoch [120/200] Loss: 0.017769
+  Epoch [140/200] Loss: 0.015540
+  Epoch [160/200] Loss: 0.015151
+  Epoch [180/200] Loss: 0.015500
+  Epoch [200/200] Loss: 0.015198
+=> Classical — MAE: 0.071848, MSE: 0.007817
+
+============================================================
+Training QASA (Quantum) on ETTh1
+============================================================
+  Epoch [20/200] Loss: 0.105249
+  Epoch [40/200] Loss: 0.066716
+  Epoch [60/200] Loss: 0.033845
+  Epoch [80/200] Loss: 0.035219
+  Epoch [100/200] Loss: 0.027256
+  Epoch [120/200] Loss: 0.025658
+  Epoch [140/200] Loss: 0.023553
+  Epoch [160/200] Loss: 0.026947
+  Epoch [180/200] Loss: 0.035035
+  Epoch [200/200] Loss: 0.019162
+=> QASA — MAE: 0.067545, MSE: 0.007912
+
+
+============================================================
+ETTh1 RESULTS SUMMARY
+============================================================
+Classical — MAE: 0.0718, MSE: 0.0078
+QASA      — MAE: 0.0675, MSE: 0.0079
+Winner: MAE→QASA, MSE→Classical
+
+Results saved to: /Users/michael/QASA/experiments/results/etth1_results.csv
+Config: hidden_dim=64, layers=4, epochs=200, seq_len=20, lr=0.0005, batch_size=16

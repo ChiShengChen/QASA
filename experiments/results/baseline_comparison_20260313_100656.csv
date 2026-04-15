@@ -1,0 +1,2 @@
+Task,Model,MAE,MSE,MAE_Std,MSE_Std,Total_Params,N_Seeds
+Damped Oscillator,Classical,0.148133,0.026910,0.000000,0.000000,200257,1

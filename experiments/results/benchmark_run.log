@@ -1,0 +1,368 @@
+/Users/michael/anaconda3/lib/python3.13/site-packages/pandas/core/computation/expressions.py:22: UserWarning: Pandas requires version '2.10.2' or newer of 'numexpr' (version '2.10.1' currently installed).
+  from pandas.core.computation.check import NUMEXPR_INSTALLED
+Device: cpu
+PyTorch: 2.8.0
+PennyLane: 0.42.3
+
+
+=================================================================
+Model                        Total Params       Trainable
+-----------------------------------------------------------------
+QASA (Quantum)                    201,405         201,405
+Classical Transformer             200,257         200,257
+=================================================================
+
+Parameter counts saved to /Users/michael/QASA/experiments/results/model_param_counts.csv
+
+
+============================================================
+Task: ARMA (classical_arma)
+============================================================
+
+  [Seed 1/1] Classical Transformer:
+  Epoch [20/200] Loss: 0.365757
+  Epoch [40/200] Loss: 0.139289
+  Epoch [60/200] Loss: 0.094317
+  Epoch [80/200] Loss: 0.067644
+  Epoch [100/200] Loss: 0.051055
+  Epoch [120/200] Loss: 0.039851
+  Epoch [140/200] Loss: 0.030387
+  Epoch [160/200] Loss: 0.024726
+  Epoch [180/200] Loss: 0.021636
+  Epoch [200/200] Loss: 0.024359
+  => MAE: 2.107764, MSE: 6.812728
+
+  [Seed 1/1] QASA (Quantum):
+  Epoch [20/200] Loss: 1.507089
+  Epoch [40/200] Loss: 0.324039
+  Epoch [60/200] Loss: 0.194490
+  Epoch [80/200] Loss: 0.153608
+  Epoch [100/200] Loss: 0.114528
+  Epoch [120/200] Loss: 0.096912
+  Epoch [140/200] Loss: 0.075122
+  Epoch [160/200] Loss: 0.070053
+  Epoch [180/200] Loss: 0.065531
+  Epoch [200/200] Loss: 0.061873
+  => MAE: 1.852903, MSE: 5.107881
+
+  Summary for ARMA:
+    Classical - MAE: 2.1078±0.0000, MSE: 6.8127±0.0000
+    QASA      - MAE: 1.8529±0.0000, MSE: 5.1079±0.0000
+    Winner: MAE→QASA, MSE→QASA
+
+============================================================
+Task: Chaotic Logistic (classical_chaotic_logistic)
+============================================================
+
+  [Seed 1/1] Classical Transformer:
+  Epoch [20/200] Loss: 0.001267
+  Epoch [40/200] Loss: 0.000805
+  Epoch [60/200] Loss: 0.000276
+  Epoch [80/200] Loss: 0.000206
+  Epoch [100/200] Loss: 0.000151
+  Epoch [120/200] Loss: 0.000110
+  Epoch [140/200] Loss: 0.000092
+  Epoch [160/200] Loss: 0.000072
+  Epoch [180/200] Loss: 0.000065
+  Epoch [200/200] Loss: 0.000063
+  => MAE: 0.393912, MSE: 0.219696
+
+  [Seed 1/1] QASA (Quantum):
+  Epoch [20/200] Loss: 0.001842
+  Epoch [40/200] Loss: 0.000899
+  Epoch [60/200] Loss: 0.000403
+  Epoch [80/200] Loss: 0.000198
+  Epoch [100/200] Loss: 0.000140
+  Epoch [120/200] Loss: 0.000138
+  Epoch [140/200] Loss: 0.000088
+  Epoch [160/200] Loss: 0.000061
+  Epoch [180/200] Loss: 0.000054
+  Epoch [200/200] Loss: 0.000051
+  => MAE: 0.295834, MSE: 0.152598
+
+  Summary for Chaotic Logistic:
+    Classical - MAE: 0.3939±0.0000, MSE: 0.2197±0.0000
+    QASA      - MAE: 0.2958±0.0000, MSE: 0.1526±0.0000
+    Winner: MAE→QASA, MSE→QASA
+
+============================================================
+Task: Damped Oscillator (classical_damped_oscillation)
+============================================================
+
+  [Seed 1/1] Classical Transformer:
+  Epoch [20/200] Loss: 0.014516
+  Epoch [40/200] Loss: 0.004411
+  Epoch [60/200] Loss: 0.004527
+  Epoch [80/200] Loss: 0.002304
+  Epoch [100/200] Loss: 0.000873
+  Epoch [120/200] Loss: 0.000691
+  Epoch [140/200] Loss: 0.000466
+  Epoch [160/200] Loss: 0.000342
+  Epoch [180/200] Loss: 0.000270
+  Epoch [200/200] Loss: 0.000267
+  => MAE: 0.065301, MSE: 0.004660
+
+  [Seed 1/1] QASA (Quantum):
+  Epoch [20/200] Loss: 0.021703
+  Epoch [40/200] Loss: 0.005260
+  Epoch [60/200] Loss: 0.003412
+  Epoch [80/200] Loss: 0.002666
+  Epoch [100/200] Loss: 0.001511
+  Epoch [120/200] Loss: 0.000914
+  Epoch [140/200] Loss: 0.000771
+  Epoch [160/200] Loss: 0.000489
+  Epoch [180/200] Loss: 0.000433
+  Epoch [200/200] Loss: 0.000408
+  => MAE: 0.161333, MSE: 0.039294
+
+  Summary for Damped Oscillator:
+    Classical - MAE: 0.0653±0.0000, MSE: 0.0047±0.0000
+    QASA      - MAE: 0.1613±0.0000, MSE: 0.0393±0.0000
+    Winner: MAE→Classical, MSE→Classical
+
+============================================================
+Task: Noisy Damped Osc (classical_noisy_damped_oscillation)
+============================================================
+
+  [Seed 1/1] Classical Transformer:
+  Epoch [20/200] Loss: 0.008572
+  Epoch [40/200] Loss: 0.008580
+  Epoch [60/200] Loss: 0.008511
+  Epoch [80/200] Loss: 0.008602
+  Epoch [100/200] Loss: 0.008240
+  Epoch [120/200] Loss: 0.008627
+  Epoch [140/200] Loss: 0.008614
+  Epoch [160/200] Loss: 0.008607
+  Epoch [180/200] Loss: 0.008601
+  Epoch [200/200] Loss: 0.008597
+  => MAE: 0.044636, MSE: 0.003062
+
+  [Seed 1/1] QASA (Quantum):
+  Epoch [20/200] Loss: 0.008516
+  Epoch [40/200] Loss: 0.008579
+  Epoch [60/200] Loss: 0.008601
+  Epoch [80/200] Loss: 0.008621
+  Epoch [100/200] Loss: 0.008606
+  Epoch [120/200] Loss: 0.008609
+  Epoch [140/200] Loss: 0.008606
+  Epoch [160/200] Loss: 0.008198
+  Epoch [180/200] Loss: 0.007442
+  Epoch [200/200] Loss: 0.007359
+  => MAE: 0.042282, MSE: 0.002732
+
+  Summary for Noisy Damped Osc:
+    Classical - MAE: 0.0446±0.0000, MSE: 0.0031±0.0000
+    QASA      - MAE: 0.0423±0.0000, MSE: 0.0027±0.0000
+    Winner: MAE→QASA, MSE→QASA
+
+============================================================
+Task: Piecewise Regime (classical_piecewise_regime)
+============================================================
+
+  [Seed 1/1] Classical Transformer:
+  Epoch [20/200] Loss: 6.806952
+  Epoch [40/200] Loss: 5.325547
+  Epoch [60/200] Loss: 4.789741
+  Epoch [80/200] Loss: 4.056778
+  Epoch [100/200] Loss: 3.588328
+  Epoch [120/200] Loss: 1.835634
+  Epoch [140/200] Loss: 1.645951
+  Epoch [160/200] Loss: 1.386142
+  Epoch [180/200] Loss: 1.467873
+  Epoch [200/200] Loss: 0.751357
+  => MAE: 22.129765, MSE: 490.460693
+
+  [Seed 1/1] QASA (Quantum):
+  Epoch [20/200] Loss: 92.489832
+  Epoch [40/200] Loss: 93.348296
+  Epoch [60/200] Loss: 87.964939
+  Epoch [80/200] Loss: 87.217843
+  Epoch [100/200] Loss: 86.872006
+  Epoch [120/200] Loss: 85.991176
+  Epoch [140/200] Loss: 85.510876
+  Epoch [160/200] Loss: 85.245876
+  Epoch [180/200] Loss: 84.951566
+  Epoch [200/200] Loss: 84.903279
+  => MAE: 22.589861, MSE: 511.035980
+
+  Summary for Piecewise Regime:
+    Classical - MAE: 22.1298±0.0000, MSE: 490.4607±0.0000
+    QASA      - MAE: 22.5899±0.0000, MSE: 511.0360±0.0000
+    Winner: MAE→Classical, MSE→Classical
+
+============================================================
+Task: Sawtooth (classical_sawtooth_wave)
+============================================================
+
+  [Seed 1/1] Classical Transformer:
+  Epoch [20/200] Loss: 0.018453
+  Epoch [40/200] Loss: 0.005156
+  Epoch [60/200] Loss: 0.006399
+  Epoch [80/200] Loss: 0.004919
+  Epoch [100/200] Loss: 0.010068
+  Epoch [120/200] Loss: 0.008918
+  Epoch [140/200] Loss: 0.003746
+  Epoch [160/200] Loss: 0.002639
+  Epoch [180/200] Loss: 0.001772
+  Epoch [200/200] Loss: 0.001599
+  => MAE: 0.125237, MSE: 0.067285
+
+  [Seed 1/1] QASA (Quantum):
+  Epoch [20/200] Loss: 0.031312
+  Epoch [40/200] Loss: 0.012775
+  Epoch [60/200] Loss: 0.008598
+  Epoch [80/200] Loss: 0.013348
+  Epoch [100/200] Loss: 0.009866
+  Epoch [120/200] Loss: 0.008057
+  Epoch [140/200] Loss: 0.004557
+  Epoch [160/200] Loss: 0.002453
+  Epoch [180/200] Loss: 0.001036
+  Epoch [200/200] Loss: 0.002186
+  => MAE: 0.162905, MSE: 0.089310
+
+  Summary for Sawtooth:
+    Classical - MAE: 0.1252±0.0000, MSE: 0.0673±0.0000
+    QASA      - MAE: 0.1629±0.0000, MSE: 0.0893±0.0000
+    Winner: MAE→Classical, MSE→Classical
+
+============================================================
+Task: Square Wave (classical_square_triangle_wave)
+============================================================
+
+  [Seed 1/1] Classical Transformer:
+  Epoch [20/200] Loss: 0.338076
+  Epoch [40/200] Loss: 0.430060
+  Epoch [60/200] Loss: 0.845117
+  Epoch [80/200] Loss: 0.679403
+  Epoch [100/200] Loss: 0.716398
+  Epoch [120/200] Loss: 0.721515
+  Epoch [140/200] Loss: 0.720173
+  Epoch [160/200] Loss: 0.717240
+  Epoch [180/200] Loss: 0.715552
+  Epoch [200/200] Loss: 0.713196
+  => MAE: 0.881917, MSE: 0.896536
+
+  [Seed 1/1] QASA (Quantum):
+  Epoch [20/200] Loss: 0.375252
+  Epoch [40/200] Loss: 0.412027
+  Epoch [60/200] Loss: 0.690875
+  Epoch [80/200] Loss: 0.401059
+  Epoch [100/200] Loss: 0.372166
+  Epoch [120/200] Loss: 0.365808
+  Epoch [140/200] Loss: 0.599492
+  Epoch [160/200] Loss: 0.324227
+  Epoch [180/200] Loss: 0.289310
+  Epoch [200/200] Loss: 0.286149
+  => MAE: 0.713913, MSE: 1.355523
+
+  Summary for Square Wave:
+    Classical - MAE: 0.8819±0.0000, MSE: 0.8965±0.0000
+    QASA      - MAE: 0.7139±0.0000, MSE: 1.3555±0.0000
+    Winner: MAE→QASA, MSE→Classical
+
+============================================================
+Task: Seasonal Trend (classical_trend_seasonality_noise)
+============================================================
+
+  [Seed 1/1] Classical Transformer:
+  Epoch [20/200] Loss: 0.685155
+  Epoch [40/200] Loss: 0.690641
+  Epoch [60/200] Loss: 0.684983
+  Epoch [80/200] Loss: 0.692472
+  Epoch [100/200] Loss: 0.679242
+  Epoch [120/200] Loss: 0.674670
+  Epoch [140/200] Loss: 0.669574
+  Epoch [160/200] Loss: 0.664230
+  Epoch [180/200] Loss: 0.661995
+  Epoch [200/200] Loss: 0.660684
+  => MAE: 0.670059, MSE: 0.559724
+
+  [Seed 1/1] QASA (Quantum):
+  Epoch [20/200] Loss: 0.656670
+  Epoch [40/200] Loss: 0.258232
+  Epoch [60/200] Loss: 0.685023
+  Epoch [80/200] Loss: 0.257494
+  Epoch [100/200] Loss: 0.247771
+  Epoch [120/200] Loss: 0.240431
+  Epoch [140/200] Loss: 0.588418
+  Epoch [160/200] Loss: 0.184422
+  Epoch [180/200] Loss: 0.177967
+  Epoch [200/200] Loss: 0.177755
+  => MAE: 0.666267, MSE: 0.552182
+
+  Summary for Seasonal Trend:
+    Classical - MAE: 0.6701±0.0000, MSE: 0.5597±0.0000
+    QASA      - MAE: 0.6663±0.0000, MSE: 0.5522±0.0000
+    Winner: MAE→QASA, MSE→QASA
+
+============================================================
+Task: Waveform (classical_waveform)
+============================================================
+
+  [Seed 1/1] Classical Transformer:
+  Epoch [20/200] Loss: 0.012899
+  Epoch [40/200] Loss: 0.007612
+  Epoch [60/200] Loss: 0.003092
+  Epoch [80/200] Loss: 0.002430
+  Epoch [100/200] Loss: 0.001814
+  Epoch [120/200] Loss: 0.000937
+  Epoch [140/200] Loss: 0.000436
+  Epoch [160/200] Loss: 0.000313
+  Epoch [180/200] Loss: 0.000281
+  Epoch [200/200] Loss: 0.000268
+  => MAE: 0.051649, MSE: 0.003538
+
+  [Seed 1/1] QASA (Quantum):
+  Epoch [20/200] Loss: 0.018383
+  Epoch [40/200] Loss: 0.007372
+  Epoch [60/200] Loss: 0.004199
+  Epoch [80/200] Loss: 0.002693
+  Epoch [100/200] Loss: 0.000993
+  Epoch [120/200] Loss: 0.000981
+  Epoch [140/200] Loss: 0.000460
+  Epoch [160/200] Loss: 0.000278
+  Epoch [180/200] Loss: 0.000246
+  Epoch [200/200] Loss: 0.000227
+  => MAE: 0.089617, MSE: 0.010503
+
+  Summary for Waveform:
+    Classical - MAE: 0.0516±0.0000, MSE: 0.0035±0.0000
+    QASA      - MAE: 0.0896±0.0000, MSE: 0.0105±0.0000
+    Winner: MAE→Classical, MSE→Classical
+
+
+================================================================================
+FINAL RESULTS (LaTeX-ready)
+================================================================================
+Task                   Model               MAE          MSE    MAE Std    MSE Std
+--------------------------------------------------------------------------------
+ARMA                   Classical        2.1078       6.8127     0.0000     0.0000
+                       QASA           *1.8529*     *5.1079*     0.0000     0.0000
+--------------------------------------------------------------------------------
+Chaotic Logistic       Classical        0.3939       0.2197     0.0000     0.0000
+                       QASA           *0.2958*     *0.1526*     0.0000     0.0000
+--------------------------------------------------------------------------------
+Damped Oscillator      Classical      *0.0653*     *0.0047*     0.0000     0.0000
+                       QASA             0.1613       0.0393     0.0000     0.0000
+--------------------------------------------------------------------------------
+Noisy Damped Osc       Classical        0.0446       0.0031     0.0000     0.0000
+                       QASA           *0.0423*     *0.0027*     0.0000     0.0000
+--------------------------------------------------------------------------------
+Piecewise Regime       Classical     *22.1298*   *490.4607*     0.0000     0.0000
+                       QASA            22.5899     511.0360     0.0000     0.0000
+--------------------------------------------------------------------------------
+Sawtooth               Classical      *0.1252*     *0.0673*     0.0000     0.0000
+                       QASA             0.1629       0.0893     0.0000     0.0000
+--------------------------------------------------------------------------------
+Square Wave            Classical        0.8819     *0.8965*     0.0000     0.0000
+                       QASA           *0.7139*       1.3555     0.0000     0.0000
+--------------------------------------------------------------------------------
+Seasonal Trend         Classical        0.6701       0.5597     0.0000     0.0000
+                       QASA           *0.6663*     *0.5522*     0.0000     0.0000
+--------------------------------------------------------------------------------
+Waveform               Classical      *0.0516*     *0.0035*     0.0000     0.0000
+                       QASA             0.0896       0.0105     0.0000     0.0000
+--------------------------------------------------------------------------------
+
+Results saved to: /Users/michael/QASA/experiments/results/qasa_benchmark_20260308_065607.csv
+Config: hidden_dim=64, layers=4, epochs=200, seeds=1, lr=0.0005, seq_len=20
