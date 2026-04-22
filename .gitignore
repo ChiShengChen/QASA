@@ -1,15 +1,9 @@
 # === Large binary files ===
 *.zip
 
-# === Paper / LaTeX build artifacts ===
-IEEE_QASATransformer/*.aux
-IEEE_QASATransformer/*.log
-IEEE_QASATransformer/*.out
-IEEE_QASATransformer/*.bbl
-IEEE_QASATransformer/*.blg
-IEEE_QASATransformer/*.fls
-IEEE_QASATransformer/*.fdb_latexmk
-IEEE_QASATransformer/*.synctex.gz
+# === Paper / LaTeX (managed separately) ===
+IEEE_QASATransformer/
+IOP_QST_journel_QASA/
 
 # === Python ===
 __pycache__/
