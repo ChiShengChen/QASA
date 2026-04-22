@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ps -p 60943 -o pid,stat,%cpu,etime)",
+      "Bash(ps -p 60943 -o pid,stat,%cpu)",
+      "Bash(ps -p 60943 -o pid,%cpu)",
+      "Bash(ps -p 60943 -o pid,stat,state,%cpu,%mem,etime)",
+      "Bash(kill 60943)",
+      "Bash(ps -p 60943 -o pid)",
+      "Bash(kill -9 60943)",
+      "Read(//Users/michael/QASA/**)",
+      "Bash(ps -p 53540 -o pid,%cpu)",
+      "Bash(ps -p 53540 -o pid,stat,%cpu,%mem,etime)",
+      "Bash(ps -p 53540 -o pid,%cpu,stat)",
+      "Bash(kill -9 53540)",
+      "Bash(ps -p 53540 -o pid)",
+      "Bash(ps -p 81776 -o pid,%cpu,stat)",
+      "Bash(kill -9 81776)",
+      "Bash(ps -p 92359 -o pid,%cpu,stat)",
+      "Bash(kill -9 92359)",
+      "Bash(ps -p 926 -o pid,%cpu,stat)",
+      "Bash(kill -9 926)",
+      "Bash(ps -p 22314 -o pid,%cpu,stat)",
+      "Bash(kill -9 22314)",
+      "Bash(ps -p 80934 -o pid,%cpu,stat)",
+      "Bash(python -c \":*)",
+      "Bash(python -u experiments/run_seasonal_remaining.py)",
+      "Bash(ps -p 44136 -o pid,%cpu,stat)",
+      "Read(//Users/michael/.ssh/**)",
+      "Bash(kill -9 44136)",
+      "Bash(ps -p 73076 -o pid,%cpu,stat)"
+    ]
+  }
+}
