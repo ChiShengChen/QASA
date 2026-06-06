@@ -1,0 +1,7 @@
+Task,TaskKey,SeqLen,Model,MAE,MAE_std,MSE,MSE_std,N
+Chaotic Logistic,classical_chaotic_logistic,20,classical,0.295074,0.000000,0.105290,0.000000,1
+Chaotic Logistic,classical_chaotic_logistic,48,classical,0.295339,0.000000,0.105422,0.000000,1
+Chaotic Logistic,classical_chaotic_logistic,96,classical,0.298058,0.000000,0.107289,0.000000,1
+Seasonal Trend,classical_trend_seasonality_noise,20,classical,0.649563,0.000000,0.532374,0.000000,1
+Seasonal Trend,classical_trend_seasonality_noise,48,classical,0.761262,0.000000,0.697400,0.000000,1
+Seasonal Trend,classical_trend_seasonality_noise,96,classical,0.879432,0.000000,0.981321,0.000000,1

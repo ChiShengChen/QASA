@@ -1,0 +1,2 @@
+mode,task,seed,n_windows,n_circuits,shots,mitigation,backend,job_id,qpu_seconds,expval_mae,mae_sim,mae_sim_std,mae_exec,mae_exec_std,pred_shift,readout_err,1q_err,2q_err,T1_us,T2_us
+aer,classical_chaotic_logistic,42,2,40,1024,0,aer,,0.0,0.02599,0.00788,0.00460,0.00750,0.00167,0.00292,nan,nan,nan,nan,nan

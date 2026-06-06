@@ -1,0 +1,92 @@
+
+============================================================
+Task: Damped Oscillator
+============================================================
+  Epoch [16/80] Loss: 0.024491
+  Epoch [32/80] Loss: 0.007986
+  Epoch [48/80] Loss: 0.004204
+  Epoch [64/80] Loss: 0.001709
+  Epoch [80/80] Loss: 0.001055
+  [angle    ] seed42: MAE 0.0832 MSE 0.0099 (2786s)
+  Epoch [16/80] Loss: 0.015773
+  Epoch [32/80] Loss: 0.010160
+  Epoch [48/80] Loss: 0.004824
+  Epoch [64/80] Loss: 0.002255
+  Epoch [80/80] Loss: 0.001336
+  [angle    ] seed43: MAE 0.0724 MSE 0.0074 (2835s)
+  Epoch [16/80] Loss: 0.026544
+  Epoch [32/80] Loss: 0.016630
+  Epoch [48/80] Loss: 0.005173
+  Epoch [64/80] Loss: 0.001808
+  Epoch [80/80] Loss: 0.001245
+  [amplitude] seed42: MAE 0.0606 MSE 0.0054 (2727s)
+  Epoch [16/80] Loss: 0.019167
+  Epoch [32/80] Loss: 0.005296
+  Epoch [48/80] Loss: 0.003658
+  Epoch [64/80] Loss: 0.001520
+  Epoch [80/80] Loss: 0.001153
+  [amplitude] seed43: MAE 0.0855 MSE 0.0099 (2638s)
+  Epoch [16/80] Loss: 0.021361
+  Epoch [32/80] Loss: 0.009734
+  Epoch [48/80] Loss: 0.004435
+  Epoch [64/80] Loss: 0.001355
+  Epoch [80/80] Loss: 0.000926
+  [reupload ] seed42: MAE 0.0443 MSE 0.0028 (3173s)
+  Epoch [16/80] Loss: 0.026245
+  Epoch [32/80] Loss: 0.007797
+  Epoch [48/80] Loss: 0.005942
+  Epoch [64/80] Loss: 0.002191
+  Epoch [80/80] Loss: 0.001450
+  [reupload ] seed43: MAE 0.0635 MSE 0.0057 (3184s)
+
+============================================================
+Task: Waveform
+============================================================
+  Epoch [16/80] Loss: 0.027412
+  Epoch [32/80] Loss: 0.008762
+  Epoch [48/80] Loss: 0.003991
+  Epoch [64/80] Loss: 0.000816
+  Epoch [80/80] Loss: 0.000668
+  [angle    ] seed42: MAE 0.1502 MSE 0.0286 (2773s)
+  Epoch [16/80] Loss: 0.025336
+  Epoch [32/80] Loss: 0.010311
+  Epoch [48/80] Loss: 0.002476
+  Epoch [64/80] Loss: 0.001172
+  Epoch [80/80] Loss: 0.000936
+  [angle    ] seed43: MAE 0.1651 MSE 0.0352 (2776s)
+  Epoch [16/80] Loss: 0.018123
+  Epoch [32/80] Loss: 0.008103
+  Epoch [48/80] Loss: 0.002781
+  Epoch [64/80] Loss: 0.000958
+  Epoch [80/80] Loss: 0.000817
+  [amplitude] seed42: MAE 0.1463 MSE 0.0284 (2637s)
+  Epoch [16/80] Loss: 0.021295
+  Epoch [32/80] Loss: 0.010986
+  Epoch [48/80] Loss: 0.002402
+  Epoch [64/80] Loss: 0.001086
+  Epoch [80/80] Loss: 0.000910
+  [amplitude] seed43: MAE 0.1450 MSE 0.0274 (2646s)
+  Epoch [16/80] Loss: 0.035718
+  Epoch [32/80] Loss: 0.008741
+  Epoch [48/80] Loss: 0.003035
+  Epoch [64/80] Loss: 0.000901
+  Epoch [80/80] Loss: 0.000755
+  [reupload ] seed42: MAE 0.1737 MSE 0.0391 (3183s)
+  Epoch [16/80] Loss: 0.036617
+  Epoch [32/80] Loss: 0.010392
+  Epoch [48/80] Loss: 0.003296
+  Epoch [64/80] Loss: 0.001108
+  Epoch [80/80] Loss: 0.000911
+  [reupload ] seed43: MAE 0.1625 MSE 0.0346 (3179s)
+
+============================================================
+ENCODING SENSITIVITY (MAE / MSE)
+============================================================
+  Damped Oscillator angle      MAE 0.0778  MSE 0.0087
+  Damped Oscillator amplitude  MAE 0.0730  MSE 0.0076
+  Damped Oscillator reupload   MAE 0.0539  MSE 0.0042
+  Waveform          angle      MAE 0.1576  MSE 0.0319
+  Waveform          amplitude  MAE 0.1457  MSE 0.0279
+  Waveform          reupload   MAE 0.1681  MSE 0.0369
+
+Saved: /Users/michael/QASA/experiments/results/encoding_sensitivity_20260605_220718.csv

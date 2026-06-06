@@ -1,0 +1,2 @@
+mode,task,seed,n_windows,n_circuits,shots,backend,expval_mae,mae_sim,mae_exec,pred_shift
+fake,classical_chaotic_logistic,42,3,60,2048,fake,0.02499,0.00962,0.01208,0.01296

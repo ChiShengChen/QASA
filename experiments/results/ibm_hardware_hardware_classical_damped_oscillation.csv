@@ -1,0 +1,2 @@
+mode,task,seed,n_windows,n_circuits,shots,mitigation,backend,job_id,qpu_seconds,expval_mae,mae_sim,mae_sim_std,mae_exec,mae_exec_std,pred_shift,readout_err,1q_err,2q_err,T1_us,T2_us
+hardware,classical_damped_oscillation,42,16,320,2048,0,ibm_fez,d8hib95v8cos73f4ghq0,248.4,0.02082,0.00920,0.00485,0.01145,0.00574,0.00253,nan,nan,nan,nan,nan

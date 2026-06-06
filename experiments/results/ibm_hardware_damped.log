@@ -1,0 +1,13 @@
+Mode=hardware  task=classical_damped_oscillation  windows=16  circuits=320  shots=2048
+qiskit_runtime_service.__init__:WARNING:2026-06-05 15:38:08,109: Instance was not set at service instantiation. Free and trial plan instances will be prioritized. Based on the following filters: (tags: None, region: us-east, eu-de), and available plans: (open), the available account instances are: open-instance. If you need a specific instance set it explicitly either by using a saved account with a saved default instance or passing it in directly to QiskitRuntimeService().
+qiskit_runtime_service.backends:WARNING:2026-06-05 15:38:08,109: Using instance: open-instance, plan: open
+  (calibration unavailable: "Couldn't find the property 'T2' for qubit 72.")
+  submitted job d8hib95v8cos73f4ghq0 (320 circuits, 2048 shots, resilience=0) -> backend ibm_fez
+  QPU usage estimate: 248.4 s
+
+  <Z> mean|hw-sim|        : 0.0208
+  one-step MAE (sim)      : 0.0092 +/- 0.0049
+  one-step MAE (hardware ): 0.0115 +/- 0.0057
+  pred shift |hw-sim|     : 0.0025
+
+Saved: /Users/michael/QASA/experiments/results/ibm_hardware_hardware_classical_damped_oscillation.csv

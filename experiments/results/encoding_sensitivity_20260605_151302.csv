@@ -1,0 +1,4 @@
+Task,TaskKey,Encoding,MAE,MAE_std,MSE,MSE_std,N
+Damped Oscillator,classical_damped_oscillation,angle,0.269968,0.000000,0.077893,0.000000,1
+Damped Oscillator,classical_damped_oscillation,amplitude,0.158726,0.000000,0.030226,0.000000,1
+Damped Oscillator,classical_damped_oscillation,reupload,0.152980,0.000000,0.028393,0.000000,1

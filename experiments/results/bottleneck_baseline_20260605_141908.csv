@@ -1,0 +1,3 @@
+Task,Model,MAE,MSE,MAE_Std,MSE_Std,N_Seeds,ValueParams
+Chaotic Logistic,bottleneck,0.292625,0.104212,0.000000,0.000000,1,40
+Chaotic Logistic,classical,0.287955,0.136474,0.000000,0.000000,1,40

@@ -1,0 +1,2 @@
+mode,task,seed,n_windows,n_circuits,shots,backend,expval_mae,mae_sim,mae_exec,pred_shift
+hardware,classical_chaotic_logistic,42,16,320,2048,ibm_fez,0.02706,0.00927,0.00996,0.00713

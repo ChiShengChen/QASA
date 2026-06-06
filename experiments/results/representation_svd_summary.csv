@@ -1,0 +1,10 @@
+Task,Stage,EffRank_mean,EffRank_std,StableRank_mean,StableRank_std,ProbeR2_mean,ProbeR2_std
+classical_chaotic_logistic,before,8.278,0.118,1.968,0.064,0.9997,0.0001
+classical_chaotic_logistic,after,4.238,1.143,1.166,0.109,0.9998,0.0001
+classical_chaotic_logistic,classical,5.701,0.025,1.528,0.079,0.9999,0.0000
+classical_damped_oscillation,before,2.379,0.343,1.019,0.007,0.9937,0.0039
+classical_damped_oscillation,after,1.809,0.035,1.009,0.001,0.9995,0.0002
+classical_damped_oscillation,classical,2.148,0.270,1.016,0.006,0.9998,0.0001
+classical_square_triangle_wave,before,1.818,0.088,1.185,0.082,-0.4701,0.0676
+classical_square_triangle_wave,after,1.792,0.218,1.269,0.179,-0.4496,0.1213
+classical_square_triangle_wave,classical,1.885,0.157,1.140,0.086,-0.4116,0.1442

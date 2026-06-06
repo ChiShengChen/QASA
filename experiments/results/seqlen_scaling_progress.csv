@@ -1,0 +1,2 @@
+Task,TaskKey,SeqLen,Model,Seed,MAE,MSE,Epochs
+Chaotic Logistic,classical_chaotic_logistic,20,qasa,42,0.293738,0.104655,80

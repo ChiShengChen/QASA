@@ -1,0 +1,563 @@
+===========================================================================
+PARAMETER-MATCHED CLASSICAL BOTTLENECK BASELINE (Referee 1, M1)
+===========================================================================
+Classical value map params (vs PQC's 36 quantum params): 40
+Bottleneck model total params: 201,409
+Classical baseline total params: 200,257
+Rank: 2 | epochs: 200 | seeds: 5
+===========================================================================
+
+
+============================================================
+Task: Chaotic Logistic (classical_chaotic_logistic)
+============================================================
+
+  [bottleneck] seed 1/5
+  Epoch [20/200] Loss: 0.002118
+  Epoch [40/200] Loss: 0.001208
+  Epoch [60/200] Loss: 0.001159
+  Epoch [80/200] Loss: 0.000409
+  Epoch [100/200] Loss: 0.000215
+  Epoch [120/200] Loss: 0.000166
+  Epoch [140/200] Loss: 0.000119
+  Epoch [160/200] Loss: 0.000136
+  Epoch [180/200] Loss: 0.000096
+  Epoch [200/200] Loss: 0.000085
+  => MAE 0.323395  MSE 0.165358  (249s)
+
+  [bottleneck] seed 2/5
+  Epoch [20/200] Loss: 0.001939
+  Epoch [40/200] Loss: 0.001112
+  Epoch [60/200] Loss: 0.000493
+  Epoch [80/200] Loss: 0.000293
+  Epoch [100/200] Loss: 0.000207
+  Epoch [120/200] Loss: 0.000171
+  Epoch [140/200] Loss: 0.000145
+  Epoch [160/200] Loss: 0.000107
+  Epoch [180/200] Loss: 0.000092
+  Epoch [200/200] Loss: 0.000089
+  => MAE 0.364879  MSE 0.198536  (247s)
+
+  [bottleneck] seed 3/5
+  Epoch [20/200] Loss: 0.001676
+  Epoch [40/200] Loss: 0.000953
+  Epoch [60/200] Loss: 0.000555
+  Epoch [80/200] Loss: 0.000226
+  Epoch [100/200] Loss: 0.000155
+  Epoch [120/200] Loss: 0.000128
+  Epoch [140/200] Loss: 0.000078
+  Epoch [160/200] Loss: 0.000068
+  Epoch [180/200] Loss: 0.000063
+  Epoch [200/200] Loss: 0.000058
+  => MAE 0.343684  MSE 0.193957  (255s)
+
+  [bottleneck] seed 4/5
+  Epoch [20/200] Loss: 0.001901
+  Epoch [40/200] Loss: 0.001263
+  Epoch [60/200] Loss: 0.000438
+  Epoch [80/200] Loss: 0.000316
+  Epoch [100/200] Loss: 0.000194
+  Epoch [120/200] Loss: 0.000146
+  Epoch [140/200] Loss: 0.000101
+  Epoch [160/200] Loss: 0.000090
+  Epoch [180/200] Loss: 0.000077
+  Epoch [200/200] Loss: 0.000074
+  => MAE 0.338964  MSE 0.186082  (252s)
+
+  [bottleneck] seed 5/5
+  Epoch [20/200] Loss: 0.001762
+  Epoch [40/200] Loss: 0.000898
+  Epoch [60/200] Loss: 0.000443
+  Epoch [80/200] Loss: 0.000311
+  Epoch [100/200] Loss: 0.000204
+  Epoch [120/200] Loss: 0.000219
+  Epoch [140/200] Loss: 0.000113
+  Epoch [160/200] Loss: 0.000096
+  Epoch [180/200] Loss: 0.000077
+  Epoch [200/200] Loss: 0.000073
+  => MAE 0.351155  MSE 0.184069  (263s)
+
+  [classical] seed 1/5
+  Epoch [20/200] Loss: 0.001267
+  Epoch [40/200] Loss: 0.000805
+  Epoch [60/200] Loss: 0.000276
+  Epoch [80/200] Loss: 0.000206
+  Epoch [100/200] Loss: 0.000151
+  Epoch [120/200] Loss: 0.000110
+  Epoch [140/200] Loss: 0.000092
+  Epoch [160/200] Loss: 0.000072
+  Epoch [180/200] Loss: 0.000065
+  Epoch [200/200] Loss: 0.000063
+  => MAE 0.393912  MSE 0.219696  (246s)
+
+  [classical] seed 2/5
+  Epoch [20/200] Loss: 0.001215
+  Epoch [40/200] Loss: 0.000420
+  Epoch [60/200] Loss: 0.000220
+  Epoch [80/200] Loss: 0.000173
+  Epoch [100/200] Loss: 0.000110
+  Epoch [120/200] Loss: 0.000093
+  Epoch [140/200] Loss: 0.000073
+  Epoch [160/200] Loss: 0.000060
+  Epoch [180/200] Loss: 0.000053
+  Epoch [200/200] Loss: 0.000048
+  => MAE 0.318828  MSE 0.168966  (250s)
+
+  [classical] seed 3/5
+  Epoch [20/200] Loss: 0.001192
+  Epoch [40/200] Loss: 0.000604
+  Epoch [60/200] Loss: 0.000288
+  Epoch [80/200] Loss: 0.000179
+  Epoch [100/200] Loss: 0.000137
+  Epoch [120/200] Loss: 0.000104
+  Epoch [140/200] Loss: 0.000074
+  Epoch [160/200] Loss: 0.000061
+  Epoch [180/200] Loss: 0.000052
+  Epoch [200/200] Loss: 0.000052
+  => MAE 0.386817  MSE 0.209900  (296s)
+
+  [classical] seed 4/5
+  Epoch [20/200] Loss: 0.001218
+  Epoch [40/200] Loss: 0.000574
+  Epoch [60/200] Loss: 0.000247
+  Epoch [80/200] Loss: 0.000173
+  Epoch [100/200] Loss: 0.000141
+  Epoch [120/200] Loss: 0.000103
+  Epoch [140/200] Loss: 0.000077
+  Epoch [160/200] Loss: 0.000065
+  Epoch [180/200] Loss: 0.000057
+  Epoch [200/200] Loss: 0.000056
+  => MAE 0.352205  MSE 0.189391  (306s)
+
+  [classical] seed 5/5
+  Epoch [20/200] Loss: 0.001217
+  Epoch [40/200] Loss: 0.000716
+  Epoch [60/200] Loss: 0.000267
+  Epoch [80/200] Loss: 0.000180
+  Epoch [100/200] Loss: 0.000132
+  Epoch [120/200] Loss: 0.000095
+  Epoch [140/200] Loss: 0.000079
+  Epoch [160/200] Loss: 0.000059
+  Epoch [180/200] Loss: 0.000052
+  Epoch [200/200] Loss: 0.000049
+  => MAE 0.412636  MSE 0.234114  (301s)
+
+============================================================
+Task: Seasonal Trend (classical_trend_seasonality_noise)
+============================================================
+
+  [bottleneck] seed 1/5
+  Epoch [20/200] Loss: 0.075657
+  Epoch [40/200] Loss: 0.257540
+  Epoch [60/200] Loss: 0.685659
+  Epoch [80/200] Loss: 0.675965
+  Epoch [100/200] Loss: 0.670482
+  Epoch [120/200] Loss: 0.666525
+  Epoch [140/200] Loss: 0.662881
+  Epoch [160/200] Loss: 0.660106
+  Epoch [180/200] Loss: 0.658297
+  Epoch [200/200] Loss: 0.657637
+  => MAE 0.654407  MSE 0.539635  (277s)
+
+  [bottleneck] seed 2/5
+  Epoch [20/200] Loss: 0.119441
+  Epoch [40/200] Loss: 0.687425
+  Epoch [60/200] Loss: 0.457346
+  Epoch [80/200] Loss: 0.529903
+  Epoch [100/200] Loss: 0.511909
+  Epoch [120/200] Loss: 0.226446
+  Epoch [140/200] Loss: 0.188681
+  Epoch [160/200] Loss: 0.184243
+  Epoch [180/200] Loss: 0.178727
+  Epoch [200/200] Loss: 0.178838
+  => MAE 0.676124  MSE 0.563727  (258s)
+
+  [bottleneck] seed 3/5
+  Epoch [20/200] Loss: 0.160915
+  Epoch [40/200] Loss: 0.679915
+  Epoch [60/200] Loss: 0.688185
+  Epoch [80/200] Loss: 0.683644
+  Epoch [100/200] Loss: 0.243476
+  Epoch [120/200] Loss: 0.238883
+  Epoch [140/200] Loss: 0.235303
+  Epoch [160/200] Loss: 0.231464
+  Epoch [180/200] Loss: 0.226458
+  Epoch [200/200] Loss: 0.226053
+  => MAE 0.685937  MSE 0.576234  (275s)
+
+  [bottleneck] seed 4/5
+  Epoch [20/200] Loss: 0.684916
+  Epoch [40/200] Loss: 0.685727
+  Epoch [60/200] Loss: 0.684115
+  Epoch [80/200] Loss: 0.682291
+  Epoch [100/200] Loss: 0.677935
+  Epoch [120/200] Loss: 0.254351
+  Epoch [140/200] Loss: 0.349171
+  Epoch [160/200] Loss: 0.225032
+  Epoch [180/200] Loss: 0.210477
+  Epoch [200/200] Loss: 0.207422
+  => MAE 0.657791  MSE 0.543013  (279s)
+
+  [bottleneck] seed 5/5
+  Epoch [20/200] Loss: 0.679144
+  Epoch [40/200] Loss: 0.688696
+  Epoch [60/200] Loss: 0.520346
+  Epoch [80/200] Loss: 0.520259
+  Epoch [100/200] Loss: 0.537894
+  Epoch [120/200] Loss: 0.251803
+  Epoch [140/200] Loss: 0.245876
+  Epoch [160/200] Loss: 0.237429
+  Epoch [180/200] Loss: 0.233522
+  Epoch [200/200] Loss: 0.231368
+  => MAE 0.657028  MSE 0.542231  (272s)
+
+  [classical] seed 1/5
+  Epoch [20/200] Loss: 0.685155
+  Epoch [40/200] Loss: 0.690641
+  Epoch [60/200] Loss: 0.684983
+  Epoch [80/200] Loss: 0.692472
+  Epoch [100/200] Loss: 0.679242
+  Epoch [120/200] Loss: 0.674670
+  Epoch [140/200] Loss: 0.669574
+  Epoch [160/200] Loss: 0.664230
+  Epoch [180/200] Loss: 0.661995
+  Epoch [200/200] Loss: 0.660684
+  => MAE 0.670059  MSE 0.559724  (239s)
+
+  [classical] seed 2/5
+  Epoch [20/200] Loss: 0.677649
+  Epoch [40/200] Loss: 0.678207
+  Epoch [60/200] Loss: 0.683104
+  Epoch [80/200] Loss: 0.679818
+  Epoch [100/200] Loss: 0.676776
+  Epoch [120/200] Loss: 0.670889
+  Epoch [140/200] Loss: 0.667251
+  Epoch [160/200] Loss: 0.662972
+  Epoch [180/200] Loss: 0.660436
+  Epoch [200/200] Loss: 0.659305
+  => MAE 0.754669  MSE 0.682144  (243s)
+
+  [classical] seed 3/5
+  Epoch [20/200] Loss: 0.675007
+  Epoch [40/200] Loss: 0.684704
+  Epoch [60/200] Loss: 0.684255
+  Epoch [80/200] Loss: 0.685287
+  Epoch [100/200] Loss: 0.682367
+  Epoch [120/200] Loss: 0.673396
+  Epoch [140/200] Loss: 0.669854
+  Epoch [160/200] Loss: 0.079575
+  Epoch [180/200] Loss: 0.068105
+  Epoch [200/200] Loss: 0.067570
+  => MAE 0.623035  MSE 0.517084  (244s)
+
+  [classical] seed 4/5
+  Epoch [20/200] Loss: 0.684624
+  Epoch [40/200] Loss: 0.255932
+  Epoch [60/200] Loss: 0.688591
+  Epoch [80/200] Loss: 0.687500
+  Epoch [100/200] Loss: 0.399284
+  Epoch [120/200] Loss: 0.403543
+  Epoch [140/200] Loss: 0.338498
+  Epoch [160/200] Loss: 0.254248
+  Epoch [180/200] Loss: 0.178359
+  Epoch [200/200] Loss: 0.162458
+  => MAE 0.669500  MSE 0.555964  (242s)
+
+  [classical] seed 5/5
+  Epoch [20/200] Loss: 0.684300
+  Epoch [40/200] Loss: 0.683458
+  Epoch [60/200] Loss: 0.681418
+  Epoch [80/200] Loss: 0.677985
+  Epoch [100/200] Loss: 0.672982
+  Epoch [120/200] Loss: 0.669498
+  Epoch [140/200] Loss: 0.664499
+  Epoch [160/200] Loss: 0.661512
+  Epoch [180/200] Loss: 0.659835
+  Epoch [200/200] Loss: 0.658817
+  => MAE 0.652257  MSE 0.537637  (243s)
+
+============================================================
+Task: Square Wave (classical_square_triangle_wave)
+============================================================
+
+  [bottleneck] seed 1/5
+  Epoch [20/200] Loss: 0.692469
+  Epoch [40/200] Loss: 0.503135
+  Epoch [60/200] Loss: 0.348734
+  Epoch [80/200] Loss: 0.821359
+  Epoch [100/200] Loss: 0.353195
+  Epoch [120/200] Loss: 0.345953
+  Epoch [140/200] Loss: 1.236445
+  Epoch [160/200] Loss: 0.344133
+  Epoch [180/200] Loss: 0.339279
+  Epoch [200/200] Loss: 0.333494
+  => MAE 0.958980  MSE 0.933578  (259s)
+
+  [bottleneck] seed 2/5
+  Epoch [20/200] Loss: 0.600076
+  Epoch [40/200] Loss: 0.651740
+  Epoch [60/200] Loss: 0.646163
+  Epoch [80/200] Loss: 0.502956
+  Epoch [100/200] Loss: 0.843666
+  Epoch [120/200] Loss: 0.844138
+  Epoch [140/200] Loss: 0.346798
+  Epoch [160/200] Loss: 0.286271
+  Epoch [180/200] Loss: 0.296752
+  Epoch [200/200] Loss: 0.298610
+  => MAE 0.693345  MSE 1.280625  (256s)
+
+  [bottleneck] seed 3/5
+  Epoch [20/200] Loss: 0.624949
+  Epoch [40/200] Loss: 0.837486
+  Epoch [60/200] Loss: 0.468326
+  Epoch [80/200] Loss: 0.651461
+  Epoch [100/200] Loss: 0.704342
+  Epoch [120/200] Loss: 0.357650
+  Epoch [140/200] Loss: 0.421318
+  Epoch [160/200] Loss: 0.337988
+  Epoch [180/200] Loss: 0.323304
+  Epoch [200/200] Loss: 0.316169
+  => MAE 0.796457  MSE 1.067907  (251s)
+
+  [bottleneck] seed 4/5
+  Epoch [20/200] Loss: 0.576619
+  Epoch [40/200] Loss: 0.494344
+  Epoch [60/200] Loss: 0.401851
+  Epoch [80/200] Loss: 0.374255
+  Epoch [100/200] Loss: 0.376798
+  Epoch [120/200] Loss: 0.345604
+  Epoch [140/200] Loss: 0.331089
+  Epoch [160/200] Loss: 0.297637
+  Epoch [180/200] Loss: 0.298918
+  Epoch [200/200] Loss: 0.287927
+  => MAE 0.719851  MSE 1.382192  (263s)
+
+  [bottleneck] seed 5/5
+  Epoch [20/200] Loss: 0.572322
+  Epoch [40/200] Loss: 0.442971
+  Epoch [60/200] Loss: 0.847943
+  Epoch [80/200] Loss: 0.403561
+  Epoch [100/200] Loss: 0.369839
+  Epoch [120/200] Loss: 0.366182
+  Epoch [140/200] Loss: 0.364171
+  Epoch [160/200] Loss: 0.367321
+  Epoch [180/200] Loss: 0.370089
+  Epoch [200/200] Loss: 0.368783
+  => MAE 0.839435  MSE 0.970247  (255s)
+
+  [classical] seed 1/5
+  Epoch [20/200] Loss: 0.338076
+  Epoch [40/200] Loss: 0.430060
+  Epoch [60/200] Loss: 0.845117
+  Epoch [80/200] Loss: 0.679403
+  Epoch [100/200] Loss: 0.716398
+  Epoch [120/200] Loss: 0.721515
+  Epoch [140/200] Loss: 0.720173
+  Epoch [160/200] Loss: 0.717240
+  Epoch [180/200] Loss: 0.715552
+  Epoch [200/200] Loss: 0.713196
+  => MAE 0.881917  MSE 0.896536  (239s)
+
+  [classical] seed 2/5
+  Epoch [20/200] Loss: 0.487324
+  Epoch [40/200] Loss: 0.444014
+  Epoch [60/200] Loss: 0.847271
+  Epoch [80/200] Loss: 0.847057
+  Epoch [100/200] Loss: 0.847908
+  Epoch [120/200] Loss: 0.516843
+  Epoch [140/200] Loss: 0.307207
+  Epoch [160/200] Loss: 0.308275
+  Epoch [180/200] Loss: 0.302728
+  Epoch [200/200] Loss: 0.302080
+  => MAE 0.720447  MSE 1.312857  (236s)
+
+  [classical] seed 3/5
+  Epoch [20/200] Loss: 0.437302
+  Epoch [40/200] Loss: 0.685177
+  Epoch [60/200] Loss: 0.650908
+  Epoch [80/200] Loss: 0.354145
+  Epoch [100/200] Loss: 0.508296
+  Epoch [120/200] Loss: 0.302882
+  Epoch [140/200] Loss: 0.291337
+  Epoch [160/200] Loss: 0.299692
+  Epoch [180/200] Loss: 0.302327
+  Epoch [200/200] Loss: 0.300916
+  => MAE 0.916982  MSE 0.895987  (237s)
+
+  [classical] seed 4/5
+  Epoch [20/200] Loss: 0.456514
+  Epoch [40/200] Loss: 0.494113
+  Epoch [60/200] Loss: 0.849906
+  Epoch [80/200] Loss: 0.849165
+  Epoch [100/200] Loss: 0.636492
+  Epoch [120/200] Loss: 0.848691
+  Epoch [140/200] Loss: 0.847755
+  Epoch [160/200] Loss: 0.848002
+  Epoch [180/200] Loss: 0.847610
+  Epoch [200/200] Loss: 0.847539
+  => MAE 0.865849  MSE 0.896581  (242s)
+
+  [classical] seed 5/5
+  Epoch [20/200] Loss: 0.414457
+  Epoch [40/200] Loss: 0.847551
+  Epoch [60/200] Loss: 0.849842
+  Epoch [80/200] Loss: 0.848345
+  Epoch [100/200] Loss: 0.849115
+  Epoch [120/200] Loss: 0.717118
+  Epoch [140/200] Loss: 0.713167
+  Epoch [160/200] Loss: 0.711576
+  Epoch [180/200] Loss: 0.602619
+  Epoch [200/200] Loss: 0.470529
+  => MAE 0.957157  MSE 0.930834  (235s)
+
+============================================================
+Task: Damped Oscillator (classical_damped_oscillation)
+============================================================
+
+  [bottleneck] seed 1/5
+  Epoch [20/200] Loss: 0.032288
+  Epoch [40/200] Loss: 0.011330
+  Epoch [60/200] Loss: 0.004702
+  Epoch [80/200] Loss: 0.001840
+  Epoch [100/200] Loss: 0.001035
+  Epoch [120/200] Loss: 0.000825
+  Epoch [140/200] Loss: 0.000417
+  Epoch [160/200] Loss: 0.000348
+  Epoch [180/200] Loss: 0.000277
+  Epoch [200/200] Loss: 0.000266
+  => MAE 0.027118  MSE 0.001050  (252s)
+
+  [bottleneck] seed 2/5
+  Epoch [20/200] Loss: 0.017688
+  Epoch [40/200] Loss: 0.015778
+  Epoch [60/200] Loss: 0.006769
+  Epoch [80/200] Loss: 0.001881
+  Epoch [100/200] Loss: 0.001136
+  Epoch [120/200] Loss: 0.000610
+  Epoch [140/200] Loss: 0.000447
+  Epoch [160/200] Loss: 0.000275
+  Epoch [180/200] Loss: 0.000221
+  Epoch [200/200] Loss: 0.000209
+  => MAE 0.022862  MSE 0.000653  (247s)
+
+  [bottleneck] seed 3/5
+  Epoch [20/200] Loss: 0.016671
+  Epoch [40/200] Loss: 0.006155
+  Epoch [60/200] Loss: 0.010668
+  Epoch [80/200] Loss: 0.003836
+  Epoch [100/200] Loss: 0.002113
+  Epoch [120/200] Loss: 0.001168
+  Epoch [140/200] Loss: 0.000771
+  Epoch [160/200] Loss: 0.000604
+  Epoch [180/200] Loss: 0.000512
+  Epoch [200/200] Loss: 0.000488
+  => MAE 0.136896  MSE 0.027236  (252s)
+
+  [bottleneck] seed 4/5
+  Epoch [20/200] Loss: 0.020135
+  Epoch [40/200] Loss: 0.013119
+  Epoch [60/200] Loss: 0.005712
+  Epoch [80/200] Loss: 0.003829
+  Epoch [100/200] Loss: 0.001844
+  Epoch [120/200] Loss: 0.001158
+  Epoch [140/200] Loss: 0.000804
+  Epoch [160/200] Loss: 0.000620
+  Epoch [180/200] Loss: 0.000511
+  Epoch [200/200] Loss: 0.000510
+  => MAE 0.100129  MSE 0.014010  (248s)
+
+  [bottleneck] seed 5/5
+  Epoch [20/200] Loss: 0.019992
+  Epoch [40/200] Loss: 0.008907
+  Epoch [60/200] Loss: 0.004487
+  Epoch [80/200] Loss: 0.002518
+  Epoch [100/200] Loss: 0.002053
+  Epoch [120/200] Loss: 0.001139
+  Epoch [140/200] Loss: 0.000808
+  Epoch [160/200] Loss: 0.000569
+  Epoch [180/200] Loss: 0.000490
+  Epoch [200/200] Loss: 0.000499
+  => MAE 0.033117  MSE 0.001482  (245s)
+
+  [classical] seed 1/5
+  Epoch [20/200] Loss: 0.014516
+  Epoch [40/200] Loss: 0.004411
+  Epoch [60/200] Loss: 0.004527
+  Epoch [80/200] Loss: 0.002304
+  Epoch [100/200] Loss: 0.000873
+  Epoch [120/200] Loss: 0.000691
+  Epoch [140/200] Loss: 0.000466
+  Epoch [160/200] Loss: 0.000342
+  Epoch [180/200] Loss: 0.000270
+  Epoch [200/200] Loss: 0.000267
+  => MAE 0.065301  MSE 0.004660  (234s)
+
+  [classical] seed 2/5
+  Epoch [20/200] Loss: 0.006916
+  Epoch [40/200] Loss: 0.002752
+  Epoch [60/200] Loss: 0.002074
+  Epoch [80/200] Loss: 0.001737
+  Epoch [100/200] Loss: 0.000758
+  Epoch [120/200] Loss: 0.000601
+  Epoch [140/200] Loss: 0.000394
+  Epoch [160/200] Loss: 0.000261
+  Epoch [180/200] Loss: 0.000205
+  Epoch [200/200] Loss: 0.000199
+  => MAE 0.018227  MSE 0.000530  (235s)
+
+  [classical] seed 3/5
+  Epoch [20/200] Loss: 0.012572
+  Epoch [40/200] Loss: 0.005937
+  Epoch [60/200] Loss: 0.002600
+  Epoch [80/200] Loss: 0.001489
+  Epoch [100/200] Loss: 0.000752
+  Epoch [120/200] Loss: 0.000684
+  Epoch [140/200] Loss: 0.000397
+  Epoch [160/200] Loss: 0.000220
+  Epoch [180/200] Loss: 0.000198
+  Epoch [200/200] Loss: 0.000183
+  => MAE 0.043891  MSE 0.002556  (224s)
+
+  [classical] seed 4/5
+  Epoch [20/200] Loss: 0.009201
+  Epoch [40/200] Loss: 0.003530
+  Epoch [60/200] Loss: 0.002529
+  Epoch [80/200] Loss: 0.001181
+  Epoch [100/200] Loss: 0.000711
+  Epoch [120/200] Loss: 0.000513
+  Epoch [140/200] Loss: 0.000319
+  Epoch [160/200] Loss: 0.000207
+  Epoch [180/200] Loss: 0.000203
+  Epoch [200/200] Loss: 0.000179
+  => MAE 0.043684  MSE 0.002181  (232s)
+
+  [classical] seed 5/5
+  Epoch [20/200] Loss: 0.005173
+  Epoch [40/200] Loss: 0.003189
+  Epoch [60/200] Loss: 0.001810
+  Epoch [80/200] Loss: 0.001302
+  Epoch [100/200] Loss: 0.000983
+  Epoch [120/200] Loss: 0.000579
+  Epoch [140/200] Loss: 0.000320
+  Epoch [160/200] Loss: 0.000245
+  Epoch [180/200] Loss: 0.000207
+  Epoch [200/200] Loss: 0.000187
+  => MAE 0.016420  MSE 0.000351  (224s)
+
+
+========================================================================
+BOTTLENECK BASELINE RESULTS (compare vs QASA in Table tab:ts_mae_mse)
+========================================================================
+Task                  Model                MAE         MSE   MAE Std   MSE Std
+------------------------------------------------------------------------
+Chaotic Logistic      bottleneck        0.3444      0.1856    0.0137    0.0114
+Chaotic Logistic      classical         0.3729      0.2044    0.0334    0.0229
+Seasonal Trend        bottleneck        0.6663      0.5530    0.0125    0.0145
+Seasonal Trend        classical         0.6739      0.5705    0.0438    0.0578
+Square Wave           bottleneck        0.8016      1.1269    0.0945    0.1756
+Square Wave           classical         0.8685      0.9866    0.0804    0.1637
+Damped Oscillator     bottleneck        0.0640      0.0089    0.0461    0.0105
+Damped Oscillator     classical         0.0375      0.0021    0.0183    0.0016
+
+Saved: /Users/michael/QASA/experiments/results/bottleneck_baseline_20260605_141932.csv
+Value-map params: 40 (PQC quantum params: 36)

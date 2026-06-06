@@ -1,0 +1,12 @@
+Mode=hardware  task=classical_chaotic_logistic  windows=16  circuits=320  shots=2048
+qiskit_runtime_service.__init__:WARNING:2026-06-05 15:20:14,431: Instance was not set at service instantiation. Free and trial plan instances will be prioritized. Based on the following filters: (tags: None, region: us-east, eu-de), and available plans: (open), the available account instances are: open-instance. If you need a specific instance set it explicitly either by using a saved account with a saved default instance or passing it in directly to QiskitRuntimeService().
+qiskit_runtime_service.backends:WARNING:2026-06-05 15:20:14,431: Using instance: open-instance, plan: open
+  submitted job d8hi2ss2upec739l4bd0 (320 circuits, 2048 shots) -> backend ibm_fez
+  QPU usage estimate: {'quantum_seconds': 248.389508479}
+
+  <Z> mean|hw-sim|        : 0.0271
+  one-step MAE (sim)      : 0.0093
+  one-step MAE (hardware ): 0.0100
+  pred shift |hw-sim|     : 0.0071
+
+Saved: /Users/michael/QASA/experiments/results/ibm_hardware_hardware.csv

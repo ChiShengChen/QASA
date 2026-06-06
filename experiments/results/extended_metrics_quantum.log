@@ -1,0 +1,29 @@
+  ARMA               qasa       R2=-0.293 DirAcc=0.534 SMAPE= 158.5 gap(test/train)=3.80
+  ARMA               qnnformer  R2=-0.249 DirAcc=0.459 SMAPE= 165.6 gap(test/train)=4.20
+  ARMA               qlstm      R2=-0.292 DirAcc=0.541 SMAPE= 144.0 gap(test/train)=3.64
+  Chaotic Logistic   qasa       R2=-0.802 DirAcc=0.537 SMAPE=  65.8 gap(test/train)=0.68
+  Chaotic Logistic   qnnformer  R2=-0.872 DirAcc=0.510 SMAPE=  67.2 gap(test/train)=0.61
+  Chaotic Logistic   qlstm      R2=-0.806 DirAcc=0.558 SMAPE=  66.0 gap(test/train)=1.11
+  Damped Oscillator  qasa       R2=-1.702 DirAcc=0.786 SMAPE=  87.8 gap(test/train)=0.21
+  Damped Oscillator  qnnformer  R2=-0.435 DirAcc=0.803 SMAPE=  84.5 gap(test/train)=0.42
+  Damped Oscillator  qlstm      R2=-10.870 DirAcc=0.653 SMAPE= 116.5 gap(test/train)=0.21
+  Noisy Damped Osc   qasa       R2=-0.014 DirAcc=0.408 SMAPE= 178.7 gap(test/train)=0.54
+  Noisy Damped Osc   qnnformer  R2=-0.014 DirAcc=0.429 SMAPE= 174.4 gap(test/train)=0.66
+  Noisy Damped Osc   qlstm      R2=-0.067 DirAcc=0.480 SMAPE= 160.5 gap(test/train)=1.24
+  Piecewise Regime   qasa       R2=-685.019 DirAcc=0.184 SMAPE= 200.0 gap(test/train)=1.10
+  Piecewise Regime   qnnformer  R2=-689.433 DirAcc=0.269 SMAPE= 200.0 gap(test/train)=1.13
+  Piecewise Regime   qlstm      R2=-682.355 DirAcc=0.221 SMAPE= 200.0 gap(test/train)=0.70
+  Sawtooth           qasa       R2=-0.448 DirAcc=0.759 SMAPE=  81.0 gap(test/train)=2.19
+  Sawtooth           qnnformer  R2=0.337 DirAcc=0.881 SMAPE=  40.7 gap(test/train)=2.01
+  Sawtooth           qlstm      R2=0.077 DirAcc=0.918 SMAPE=  60.6 gap(test/train)=1.34
+  Square Wave        qasa       R2=-0.161 DirAcc=0.302 SMAPE= 110.5 gap(test/train)=1.33
+  Square Wave        qnnformer  R2=-0.344 DirAcc=0.246 SMAPE=  80.6 gap(test/train)=3.10
+  Square Wave        qlstm      R2=-0.346 DirAcc=0.508 SMAPE=  96.0 gap(test/train)=5.47
+  Seasonal Trend     qasa       R2=-0.065 DirAcc=0.340 SMAPE=  68.2 gap(test/train)=0.51
+  Seasonal Trend     qnnformer  R2=-0.067 DirAcc=0.367 SMAPE=  68.3 gap(test/train)=0.51
+  Seasonal Trend     qlstm      R2=-1.363 DirAcc=0.500 SMAPE=  77.4 gap(test/train)=1.62
+  Waveform           qasa       R2=0.959 DirAcc=0.939 SMAPE=  35.7 gap(test/train)=1.00
+  Waveform           qnnformer  R2=0.988 DirAcc=0.963 SMAPE=  23.7 gap(test/train)=1.03
+  Waveform           qlstm      R2=0.789 DirAcc=0.891 SMAPE=  63.4 gap(test/train)=1.01
+
+Saved: /Users/michael/QASA/experiments/results/extended_metrics.csv
