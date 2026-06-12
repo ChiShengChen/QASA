@@ -1,0 +1,2 @@
+Dataset,Model,MAE,MSE,ValueParams
+ETTh1,ClassicalBottleneck,0.062061,0.006829,40

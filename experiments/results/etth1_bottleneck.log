@@ -1,0 +1,17 @@
+ETTh1.csv already exists at /Users/michael/QASA/experiments/data/ETTh1.csv
+ETTh1 loaded: train=500, val=2880, test=500 windows (subsampled)
+ETTh1 classical bottleneck: value-map params=40 (vs PQC 36), total=201,409
+  Epoch [20/200] Loss: 0.081998
+  Epoch [40/200] Loss: 0.045300
+  Epoch [60/200] Loss: 0.036225
+  Epoch [80/200] Loss: 0.042538
+  Epoch [100/200] Loss: 0.034067
+  Epoch [120/200] Loss: 0.025448
+  Epoch [140/200] Loss: 0.023916
+  Epoch [160/200] Loss: 0.022574
+  Epoch [180/200] Loss: 0.021483
+  Epoch [200/200] Loss: 0.021524
+
+=> ETTh1 classical bottleneck — MAE: 0.062061, MSE: 0.006829
+   (compare: published Classical 0.0718/0.0078, QASA 0.0675/0.0079)
+Saved: /Users/michael/QASA/experiments/results/etth1_bottleneck_results.csv
