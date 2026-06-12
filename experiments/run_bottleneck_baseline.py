@@ -203,6 +203,8 @@ def main():
     parser.add_argument('--seeds', type=int, default=5)
     parser.add_argument('--rank', type=int, default=2,
                         help="Rank of the classical value map (controls param count)")
+    parser.add_argument('--seed-start', type=int, default=42,
+                        help="First seed (use a fresh value to double-confirm with new seeds)")
     parser.add_argument('--dry-run', action='store_true')
     args = parser.parse_args()
 
@@ -264,7 +266,7 @@ def main():
         for mk, mclass in models.items():
             seed_maes, seed_mses = [], []
             for seed_idx in range(args.seeds):
-                seed = 42 + seed_idx
+                seed = args.seed_start + seed_idx
                 torch.manual_seed(seed)
                 np.random.seed(seed)
                 print(f"\n  [{mk}] seed {seed_idx+1}/{args.seeds}")

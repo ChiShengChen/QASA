@@ -1,0 +1,124 @@
+
+============================================================
+Channel: amplitude_damping  (Chaotic Logistic)  [resume: 0 runs done]
+============================================================
+  Epoch [25/100] Loss: 0.001185
+  Epoch [50/100] Loss: 0.000406
+  Epoch [75/100] Loss: 0.000235
+  Epoch [100/100] Loss: 0.000197
+  amplitude_damping p=0.0    seed42: MAE 0.3696 MSE 0.2007 (6545s)
+  Epoch [25/100] Loss: 0.001722
+  Epoch [50/100] Loss: 0.000545
+  Epoch [75/100] Loss: 0.000264
+  Epoch [100/100] Loss: 0.000225
+  amplitude_damping p=0.0    seed43: MAE 0.2959 MSE 0.1637 (6506s)
+  Epoch [25/100] Loss: 0.001298
+  Epoch [50/100] Loss: 0.000421
+  Epoch [75/100] Loss: 0.000226
+  Epoch [100/100] Loss: 0.000188
+  amplitude_damping p=0.005  seed42: MAE 0.3670 MSE 0.1964 (7733s)
+  Epoch [25/100] Loss: 0.001667
+  Epoch [50/100] Loss: 0.000608
+  Epoch [75/100] Loss: 0.000286
+  Epoch [100/100] Loss: 0.000227
+  amplitude_damping p=0.005  seed43: MAE 0.3772 MSE 0.2247 (7864s)
+  Epoch [25/100] Loss: 0.001010
+  Epoch [50/100] Loss: 0.000504
+  Epoch [75/100] Loss: 0.000240
+  Epoch [100/100] Loss: 0.000203
+  amplitude_damping p=0.01   seed42: MAE 0.3732 MSE 0.2026 (7872s)
+  Epoch [25/100] Loss: 0.001813
+  Epoch [50/100] Loss: 0.000564
+  Epoch [75/100] Loss: 0.000302
+  Epoch [100/100] Loss: 0.000235
+  amplitude_damping p=0.01   seed43: MAE 0.3456 MSE 0.2008 (7756s)
+  Epoch [25/100] Loss: 0.001281
+  Epoch [50/100] Loss: 0.000390
+  Epoch [75/100] Loss: 0.000220
+  Epoch [100/100] Loss: 0.000185
+  amplitude_damping p=0.05   seed42: MAE 0.3766 MSE 0.2084 (7858s)
+  Epoch [25/100] Loss: 0.001624
+  Epoch [50/100] Loss: 0.000502
+  Epoch [75/100] Loss: 0.000272
+  Epoch [100/100] Loss: 0.000208
+  amplitude_damping p=0.05   seed43: MAE 0.3489 MSE 0.2023 (7860s)
+  Epoch [25/100] Loss: 0.001272
+  Epoch [50/100] Loss: 0.000468
+  Epoch [75/100] Loss: 0.000241
+  Epoch [100/100] Loss: 0.000200
+  amplitude_damping p=0.1    seed42: MAE 0.3148 MSE 0.1700 (7645s)
+  Epoch [25/100] Loss: 0.001606
+  Epoch [50/100] Loss: 0.000500
+  Epoch [75/100] Loss: 0.000291
+  Epoch [100/100] Loss: 0.000217
+  amplitude_damping p=0.1    seed43: MAE 0.4552 MSE 0.2836 (8159s)
+
+============================================================
+Channel: bit_flip  (Chaotic Logistic)  [resume: 0 runs done]
+============================================================
+  Epoch [25/100] Loss: 0.001185
+  Epoch [50/100] Loss: 0.000406
+  Epoch [75/100] Loss: 0.000235
+  Epoch [100/100] Loss: 0.000197
+  bit_flip p=0.0    seed42: MAE 0.3696 MSE 0.2007 (6555s)
+  Epoch [25/100] Loss: 0.001722
+  Epoch [50/100] Loss: 0.000545
+  Epoch [75/100] Loss: 0.000264
+  Epoch [100/100] Loss: 0.000225
+  bit_flip p=0.0    seed43: MAE 0.2959 MSE 0.1637 (6540s)
+  Epoch [25/100] Loss: 0.001124
+  Epoch [50/100] Loss: 0.000414
+  Epoch [75/100] Loss: 0.000224
+  Epoch [100/100] Loss: 0.000188
+  bit_flip p=0.005  seed42: MAE 0.3406 MSE 0.1895 (7553s)
+  Epoch [25/100] Loss: 0.001534
+  Epoch [50/100] Loss: 0.000594
+  Epoch [75/100] Loss: 0.000297
+  Epoch [100/100] Loss: 0.000222
+  bit_flip p=0.005  seed43: MAE 0.2962 MSE 0.1635 (7969s)
+  Epoch [25/100] Loss: 0.001416
+  Epoch [50/100] Loss: 0.000403
+  Epoch [75/100] Loss: 0.000237
+  Epoch [100/100] Loss: 0.000189
+  bit_flip p=0.01   seed42: MAE 0.4258 MSE 0.2385 (7626s)
+  Epoch [25/100] Loss: 0.001520
+  Epoch [50/100] Loss: 0.000599
+  Epoch [75/100] Loss: 0.000282
+  Epoch [100/100] Loss: 0.000233
+  bit_flip p=0.01   seed43: MAE 0.3826 MSE 0.2222 (7790s)
+  Epoch [25/100] Loss: 0.001482
+  Epoch [50/100] Loss: 0.000406
+  Epoch [75/100] Loss: 0.000209
+  Epoch [100/100] Loss: 0.000181
+  bit_flip p=0.05   seed42: MAE 0.3795 MSE 0.2139 (7738s)
+  Epoch [25/100] Loss: 0.001587
+  Epoch [50/100] Loss: 0.000484
+  Epoch [75/100] Loss: 0.000267
+  Epoch [100/100] Loss: 0.000227
+  bit_flip p=0.05   seed43: MAE 0.3597 MSE 0.1982 (7678s)
+  Epoch [25/100] Loss: 0.001349
+  Epoch [50/100] Loss: 0.000452
+  Epoch [75/100] Loss: 0.000237
+  Epoch [100/100] Loss: 0.000200
+  bit_flip p=0.1    seed42: MAE 0.3850 MSE 0.2128 (7584s)
+  Epoch [25/100] Loss: 0.001535
+  Epoch [50/100] Loss: 0.000512
+  Epoch [75/100] Loss: 0.000290
+  Epoch [100/100] Loss: 0.000240
+  bit_flip p=0.1    seed43: MAE 0.4178 MSE 0.2539 (7696s)
+
+============================================================
+MULTI-CHANNEL NOISE (MAE, Δ vs p=0)
+============================================================
+  amplitude_damping  p=0.0    MAE 0.3327  (+0.0%)  n=2
+  amplitude_damping  p=0.005  MAE 0.3721  (+11.8%)  n=2
+  amplitude_damping  p=0.01   MAE 0.3594  (+8.0%)  n=2
+  amplitude_damping  p=0.05   MAE 0.3627  (+9.0%)  n=2
+  amplitude_damping  p=0.1    MAE 0.3850  (+15.7%)  n=2
+  bit_flip           p=0.0    MAE 0.3327  (+0.0%)  n=2
+  bit_flip           p=0.005  MAE 0.3184  (-4.3%)  n=2
+  bit_flip           p=0.01   MAE 0.4042  (+21.5%)  n=2
+  bit_flip           p=0.05   MAE 0.3696  (+11.1%)  n=2
+  bit_flip           p=0.1    MAE 0.4014  (+20.6%)  n=2
+
+Progress CSV (resumable): /Users/michael/QASA/experiments/results/noise_multichannel_progress_classical_chaotic_logistic.csv

@@ -1,0 +1,9 @@
+Task,Model,MAE,MSE,MAE_Std,MSE_Std,N_Seeds,ValueParams
+Chaotic Logistic,bottleneck,0.374191,0.207218,0.034365,0.025325,5,40
+Chaotic Logistic,classical,0.373057,0.206495,0.035458,0.021123,5,40
+Seasonal Trend,bottleneck,0.658854,0.544651,0.008783,0.009354,5,40
+Seasonal Trend,classical,0.691660,0.602898,0.046703,0.090366,5,40
+Square Wave,bottleneck,0.779613,1.180549,0.090242,0.197785,5,40
+Square Wave,classical,0.866609,1.021147,0.075041,0.181027,5,40
+Damped Oscillator,bottleneck,0.061586,0.009929,0.056526,0.015159,5,40
+Damped Oscillator,classical,0.071361,0.008280,0.036806,0.006778,5,40

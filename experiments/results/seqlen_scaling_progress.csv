@@ -1,2 +1,11 @@
 Task,TaskKey,SeqLen,Model,Seed,MAE,MSE,Epochs
 Chaotic Logistic,classical_chaotic_logistic,20,qasa,42,0.293738,0.104655,80
+Chaotic Logistic,classical_chaotic_logistic,48,qasa,42,0.293733,0.104648,80
+Seasonal Trend,classical_trend_seasonality_noise,20,qasa,42,0.759404,0.698691,80
+Seasonal Trend,classical_trend_seasonality_noise,48,qasa,42,0.742505,0.665493,80
+Chaotic Logistic,classical_chaotic_logistic,20,classical,42,0.334763,0.188655,80
+Chaotic Logistic,classical_chaotic_logistic,48,classical,42,0.336300,0.195088,80
+Chaotic Logistic,classical_chaotic_logistic,96,classical,42,0.328809,0.189968,80
+Seasonal Trend,classical_trend_seasonality_noise,20,classical,42,0.600331,0.506116,80
+Seasonal Trend,classical_trend_seasonality_noise,48,classical,42,1.082138,1.911242,80
+Seasonal Trend,classical_trend_seasonality_noise,96,classical,42,0.841966,1.136067,80

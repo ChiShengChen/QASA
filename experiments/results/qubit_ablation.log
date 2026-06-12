@@ -1,0 +1,62 @@
+============================================================
+QUBIT-MAPPING ABLATION  (Chaotic Logistic)  [resume: 0 runs done]
+============================================================
+  Epoch [24/120] Loss: 0.001360
+  Epoch [48/120] Loss: 0.000442
+  Epoch [72/120] Loss: 0.000239
+  Epoch [96/120] Loss: 0.000150
+  Epoch [120/120] Loss: 0.000113
+  n_qubits=4   seed42: MAE 0.4170 MSE 0.2377 (q_params=20, 2021s)
+  Epoch [24/120] Loss: 0.002023
+  Epoch [48/120] Loss: 0.000520
+  Epoch [72/120] Loss: 0.000362
+  Epoch [96/120] Loss: 0.000200
+  Epoch [120/120] Loss: 0.000166
+  n_qubits=4   seed43: MAE 0.3257 MSE 0.1781 (q_params=20, 2046s)
+  Epoch [24/120] Loss: 0.001381
+  Epoch [48/120] Loss: 0.000554
+  Epoch [72/120] Loss: 0.000242
+  Epoch [96/120] Loss: 0.000172
+  Epoch [120/120] Loss: 0.000143
+  n_qubits=6   seed42: MAE 0.3453 MSE 0.1844 (q_params=28, 2944s)
+  Epoch [24/120] Loss: 0.001361
+  Epoch [48/120] Loss: 0.000553
+  Epoch [72/120] Loss: 0.000369
+  Epoch [96/120] Loss: 0.000178
+  Epoch [120/120] Loss: 0.000167
+  n_qubits=6   seed43: MAE 0.3741 MSE 0.2033 (q_params=28, 2958s)
+  Epoch [24/120] Loss: 0.001242
+  Epoch [48/120] Loss: 0.000614
+  Epoch [72/120] Loss: 0.000275
+  Epoch [96/120] Loss: 0.000198
+  Epoch [120/120] Loss: 0.000170
+  n_qubits=8   seed42: MAE 0.3724 MSE 0.2041 (q_params=36, 4305s)
+  Epoch [24/120] Loss: 0.001524
+  Epoch [48/120] Loss: 0.000578
+  Epoch [72/120] Loss: 0.000314
+  Epoch [96/120] Loss: 0.000175
+  Epoch [120/120] Loss: 0.000156
+  n_qubits=8   seed43: MAE 0.3651 MSE 0.2041 (q_params=36, 4243s)
+  Epoch [24/120] Loss: 0.001361
+  Epoch [48/120] Loss: 0.000597
+  Epoch [72/120] Loss: 0.000268
+  Epoch [96/120] Loss: 0.000170
+  Epoch [120/120] Loss: 0.000143
+  n_qubits=10  seed42: MAE 0.2879 MSE 0.1419 (q_params=44, 7313s)
+  Epoch [24/120] Loss: 0.001387
+  Epoch [48/120] Loss: 0.000491
+  Epoch [72/120] Loss: 0.000293
+  Epoch [96/120] Loss: 0.000189
+  Epoch [120/120] Loss: 0.000152
+  n_qubits=10  seed43: MAE 0.3602 MSE 0.1957 (q_params=44, 7130s)
+
+============================================================
+QUBIT ABLATION RESULTS
+============================================================
+n_qubits  q_params         MAE         MSE    N
+4         20            0.3714      0.2079    2
+6         28            0.3597      0.1938    2
+8         36            0.3688      0.2041    2
+10        44            0.3241      0.1688    2
+
+Progress CSV (resumable): /Users/michael/QASA/experiments/results/qubit_ablation_progress_classical_chaotic_logistic.csv

@@ -1,23 +1,31 @@
-[resume: 0 runs done]
+[resume: 4 runs done]
 
 ============================================================
 Task: Chaotic Logistic  (series=500, boundary=400)
 ============================================================
-  L=20  qasa       seed42: MAE 0.2937 MSE 0.1047 (2773s)
-  L=48  qasa       seed42: MAE 0.2937 MSE 0.1046 (14228s)
+  L=20  classical  seed42: MAE 0.3348 MSE 0.1887 (14s)
+  L=48  classical  seed42: MAE 0.3363 MSE 0.1951 (29s)
+  L=96  classical  seed42: MAE 0.3288 MSE 0.1900 (56s)
 
 ============================================================
 Task: Seasonal Trend  (series=500, boundary=400)
 ============================================================
-  L=20  qasa       seed42: MAE 0.7594 MSE 0.6987 (2808s)
-  L=48  qasa       seed42: MAE 0.7425 MSE 0.6655 (24251s)
+  L=20  classical  seed42: MAE 0.6003 MSE 0.5061 (21s)
+  L=48  classical  seed42: MAE 1.0821 MSE 1.9112 (33s)
+  L=96  classical  seed42: MAE 0.8420 MSE 1.1361 (57s)
 
 ============================================================
 SEQUENCE-LENGTH SCALING (MAE, mean over seeds)
 ============================================================
+  Chaotic Logistic L=20   classical  MAE 0.3348  (n=1)
   Chaotic Logistic L=20   qasa       MAE 0.2937  (n=1)
+  Chaotic Logistic L=48   classical  MAE 0.3363  (n=1)
   Chaotic Logistic L=48   qasa       MAE 0.2937  (n=1)
+  Chaotic Logistic L=96   classical  MAE 0.3288  (n=1)
+  Seasonal Trend   L=20   classical  MAE 0.6003  (n=1)
   Seasonal Trend   L=20   qasa       MAE 0.7594  (n=1)
+  Seasonal Trend   L=48   classical  MAE 1.0821  (n=1)
   Seasonal Trend   L=48   qasa       MAE 0.7425  (n=1)
+  Seasonal Trend   L=96   classical  MAE 0.8420  (n=1)
 
 Progress CSV (resumable): /Users/michael/QASA/experiments/results/seqlen_scaling_progress.csv
