@@ -40,6 +40,19 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 
+# Larger fonts for publication-quality figures (legible when shrunk to column width)
+plt.rcParams.update({
+    'font.size': 15,
+    'axes.titlesize': 17,
+    'axes.labelsize': 16,
+    'xtick.labelsize': 13,
+    'ytick.labelsize': 13,
+    'legend.fontsize': 13,
+    'figure.titlesize': 19,
+    'lines.linewidth': 2.0,
+    'lines.markersize': 7,
+})
+
 RESULTS_DIR = os.path.join(PROJECT_ROOT, "experiments", "results")
 PLOT_DIR = os.path.join(RESULTS_DIR, "plots", "quantum_advantage")
 os.makedirs(PLOT_DIR, exist_ok=True)
