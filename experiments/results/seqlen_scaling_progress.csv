@@ -11,3 +11,9 @@ Seasonal Trend,classical_trend_seasonality_noise,48,classical,42,1.082138,1.9112
 Seasonal Trend,classical_trend_seasonality_noise,96,classical,42,0.841966,1.136067,80
 Chaotic Logistic,classical_chaotic_logistic,96,qasa,42,0.293575,0.104567,80
 Seasonal Trend,classical_trend_seasonality_noise,96,qasa,42,0.569358,0.549418,80
+Chaotic Logistic,classical_chaotic_logistic,20,bottleneck,42,0.294072,0.104831,80
+Chaotic Logistic,classical_chaotic_logistic,48,bottleneck,42,0.293826,0.104695,80
+Chaotic Logistic,classical_chaotic_logistic,96,bottleneck,42,0.293394,0.104478,80
+Seasonal Trend,classical_trend_seasonality_noise,20,bottleneck,42,0.773694,0.745101,80
+Seasonal Trend,classical_trend_seasonality_noise,48,bottleneck,42,0.735407,0.653732,80
+Seasonal Trend,classical_trend_seasonality_noise,96,bottleneck,42,0.571157,0.529872,80

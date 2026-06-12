@@ -1,0 +1,39 @@
+[resume: 12 runs done]
+
+============================================================
+Task: Chaotic Logistic  (series=500, boundary=400)
+============================================================
+  L=20  bottleneck seed42: MAE 0.2941 MSE 0.1048 (14s)
+  L=48  bottleneck seed42: MAE 0.2938 MSE 0.1047 (26s)
+  L=96  bottleneck seed42: MAE 0.2934 MSE 0.1045 (48s)
+
+============================================================
+Task: Seasonal Trend  (series=500, boundary=400)
+============================================================
+  L=20  bottleneck seed42: MAE 0.7737 MSE 0.7451 (18s)
+  L=48  bottleneck seed42: MAE 0.7354 MSE 0.6537 (28s)
+  L=96  bottleneck seed42: MAE 0.5712 MSE 0.5299 (48s)
+
+============================================================
+SEQUENCE-LENGTH SCALING (MAE, mean over seeds)
+============================================================
+  Chaotic Logistic L=20   bottleneck MAE 0.2941  (n=1)
+  Chaotic Logistic L=20   classical  MAE 0.3348  (n=1)
+  Chaotic Logistic L=20   qasa       MAE 0.2937  (n=1)
+  Chaotic Logistic L=48   bottleneck MAE 0.2938  (n=1)
+  Chaotic Logistic L=48   classical  MAE 0.3363  (n=1)
+  Chaotic Logistic L=48   qasa       MAE 0.2937  (n=1)
+  Chaotic Logistic L=96   bottleneck MAE 0.2934  (n=1)
+  Chaotic Logistic L=96   classical  MAE 0.3288  (n=1)
+  Chaotic Logistic L=96   qasa       MAE 0.2936  (n=1)
+  Seasonal Trend   L=20   bottleneck MAE 0.7737  (n=1)
+  Seasonal Trend   L=20   classical  MAE 0.6003  (n=1)
+  Seasonal Trend   L=20   qasa       MAE 0.7594  (n=1)
+  Seasonal Trend   L=48   bottleneck MAE 0.7354  (n=1)
+  Seasonal Trend   L=48   classical  MAE 1.0821  (n=1)
+  Seasonal Trend   L=48   qasa       MAE 0.7425  (n=1)
+  Seasonal Trend   L=96   bottleneck MAE 0.5712  (n=1)
+  Seasonal Trend   L=96   classical  MAE 0.8420  (n=1)
+  Seasonal Trend   L=96   qasa       MAE 0.5694  (n=1)
+
+Progress CSV (resumable): /Users/michael/QASA/experiments/results/seqlen_scaling_progress.csv

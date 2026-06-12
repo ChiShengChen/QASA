@@ -39,9 +39,11 @@ if PROJECT_ROOT not in sys.path:
 
 from quantum_benchmark.tasks import get_task
 from experiments.run_baseline_comparison import QASAModel, ClassicalModel, TASK_DISPLAY_NAMES
+from experiments.run_bottleneck_baseline import ClassicalBottleneckModel
 from experiments.resume_utils import load_done, append_row, aggregate
 
-MODEL_CLASSES = {'classical': ClassicalModel, 'qasa': QASAModel}
+MODEL_CLASSES = {'classical': ClassicalModel, 'qasa': QASAModel,
+                 'bottleneck': ClassicalBottleneckModel}
 
 
 def reconstruct_series(task):

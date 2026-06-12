@@ -18,8 +18,9 @@ OUT = os.path.join(RESULTS_DIR, "plots", "seqlen_scaling.pdf")
 
 TASKS = [('classical_chaotic_logistic', 'Chaotic Logistic'),
          ('classical_trend_seasonality_noise', 'Seasonal Trend')]
-COLORS = {'qasa': 'tab:red', 'classical': 'tab:blue'}
-LABELS = {'qasa': 'QASA (8-qubit PQC)', 'classical': 'Classical Transformer'}
+COLORS = {'qasa': 'tab:red', 'classical': 'tab:blue', 'bottleneck': 'tab:green'}
+LABELS = {'qasa': 'QASA (8-qubit PQC)', 'classical': 'Classical Transformer (full)',
+          'bottleneck': 'Classical bottleneck (40 params)'}
 
 
 def load():
@@ -36,7 +37,7 @@ def main():
     data = load()
     fig, axes = plt.subplots(1, 2, figsize=(12, 4.5))
     for ax, (tk, disp) in zip(axes, TASKS):
-        for model in ('classical', 'qasa'):
+        for model in ('classical', 'bottleneck', 'qasa'):
             d = data.get((tk, model))
             if not d:
                 continue
@@ -50,7 +51,7 @@ def main():
         ax.set_ylabel('Test MAE')
         ax.grid(alpha=0.3)
         ax.legend(fontsize=9)
-    fig.suptitle('Scalability to longer sequences: QASA vs classical', fontsize=13)
+    fig.suptitle('Scalability to longer sequences: the bottleneck (classical or quantum) is not an $L$-ceiling', fontsize=13)
     plt.tight_layout()
     plt.savefig(OUT, bbox_inches='tight')
     plt.savefig(OUT.replace('.pdf', '.png'), dpi=150, bbox_inches='tight')
@@ -58,7 +59,7 @@ def main():
     # print table for the manuscript
     print("\nMAE by L:")
     for tk, disp in TASKS:
-        for model in ('classical', 'qasa'):
+        for model in ('classical', 'bottleneck', 'qasa'):
             d = data.get((tk, model), {})
             row = "  ".join(f"L{L}={np.mean(v):.4f}" for L, v in sorted(d.items()))
             print(f"  {disp:<16} {model:<10} {row}")
