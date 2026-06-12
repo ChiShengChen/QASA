@@ -9,3 +9,5 @@ Chaotic Logistic,classical_chaotic_logistic,96,classical,42,0.328809,0.189968,80
 Seasonal Trend,classical_trend_seasonality_noise,20,classical,42,0.600331,0.506116,80
 Seasonal Trend,classical_trend_seasonality_noise,48,classical,42,1.082138,1.911242,80
 Seasonal Trend,classical_trend_seasonality_noise,96,classical,42,0.841966,1.136067,80
+Chaotic Logistic,classical_chaotic_logistic,96,qasa,42,0.293575,0.104567,80
+Seasonal Trend,classical_trend_seasonality_noise,96,qasa,42,0.569358,0.549418,80
