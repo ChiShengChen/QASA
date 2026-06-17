@@ -1,0 +1,64 @@
+ablation_type,config_name,quantum_indices,n_quantum_layers,task,seed,mae,mse,train_loss,total_params,time_seconds
+position,pos_Q_first,[0],1,Chaotic Logistic,42,0.380830,0.209221,0.000068,0,0
+position,pos_Q_first,[0],1,Chaotic Logistic,43,0.405404,0.227262,0.000089,201405,6917.0855412483215
+position,pos_Q_first,[0],1,Chaotic Logistic,44,0.400131,0.234710,0.000152,201405,6817.354113101959
+position,pos_Q_first,[0],1,Damped Oscillator,42,0.096594,0.013773,0.000405,0,0
+position,pos_Q_first,[0],1,Damped Oscillator,43,0.124683,0.022083,0.000454,201405,6758.566684961319
+position,pos_Q_first,[0],1,Damped Oscillator,44,0.071002,0.006814,0.000463,201405,6769.395873069763
+position,pos_Q_first,[0],1,Square Wave,42,0.761767,1.034332,0.299240,0,0
+position,pos_Q_first,[0],1,Square Wave,43,0.961829,0.937244,0.298475,201405,6758.104328155518
+position,pos_Q_first,[0],1,Square Wave,44,0.707301,1.329690,0.292397,201405,6814.618321895599
+position,pos_Q_second,[1],1,Chaotic Logistic,42,0.374039,0.203304,0.000070,0,0
+position,pos_Q_second,[1],1,Chaotic Logistic,43,0.352247,0.187029,0.000066,201405,6864.969467878342
+position,pos_Q_second,[1],1,Chaotic Logistic,44,0.439452,0.251179,0.000113,201405,6902.852604866028
+position,pos_Q_second,[1],1,Damped Oscillator,42,0.192367,0.051126,0.000243,0,0
+position,pos_Q_second,[1],1,Damped Oscillator,43,0.253599,0.087854,0.000404,201405,7118.736642837524
+position,pos_Q_second,[1],1,Damped Oscillator,44,0.104143,0.015038,0.000518,201405,6811.467073917389
+position,pos_Q_second,[1],1,Square Wave,42,0.713242,1.336594,0.297778,0,0
+position,pos_Q_second,[1],1,Square Wave,43,0.953982,0.928895,0.297310,201405,6902.947777032852
+position,pos_Q_second,[1],1,Square Wave,44,0.967769,0.946293,0.300710,201405,6802.487864971161
+position,pos_Q_third,[2],1,Chaotic Logistic,42,0.413400,0.243700,0.000053,0,0
+position,pos_Q_third,[2],1,Chaotic Logistic,43,0.426283,0.239611,0.000074,201405,6936.284112930298
+position,pos_Q_third,[2],1,Chaotic Logistic,44,0.373435,0.205807,0.000064,201405,6834.076430082321
+position,pos_Q_third,[2],1,Damped Oscillator,42,0.038583,0.002003,0.000186,0,0
+position,pos_Q_third,[2],1,Damped Oscillator,43,0.161958,0.036546,0.000451,201405,6885.092643976212
+position,pos_Q_third,[2],1,Damped Oscillator,44,0.116310,0.019326,0.000472,201405,6790.60805106163
+position,pos_Q_third,[2],1,Square Wave,42,0.897369,0.894144,0.292123,0,0
+position,pos_Q_third,[2],1,Square Wave,43,0.855716,0.963573,0.312001,201405,6810.030728816986
+position,pos_Q_third,[2],1,Square Wave,44,0.709404,1.368366,0.275298,201405,6801.631876707077
+position,pos_Q_last,[3],1,Chaotic Logistic,42,0.349913,0.183180,0.000075,0,0
+position,pos_Q_last,[3],1,Chaotic Logistic,43,0.341526,0.188413,0.000057,201405,6826.512099027634
+position,pos_Q_last,[3],1,Chaotic Logistic,44,0.320809,0.180391,0.000066,201405,6860.136718034744
+position,pos_Q_last,[3],1,Damped Oscillator,42,0.124405,0.020561,0.000348,0,0
+position,pos_Q_last,[3],1,Damped Oscillator,43,0.014111,0.000252,0.000220,201405,6908.699186086655
+position,pos_Q_last,[3],1,Damped Oscillator,44,0.119595,0.020051,0.000439,201405,6844.584128141403
+position,pos_Q_last,[3],1,Square Wave,42,0.727986,1.298932,0.294843,0,0
+position,pos_Q_last,[3],1,Square Wave,43,0.856941,0.903101,0.329935,201405,6983.754535913467
+position,pos_Q_last,[3],1,Square Wave,44,0.891075,0.893655,0.303933,201405,6867.669152021408
+count,count_0Q,[],0,Chaotic Logistic,42,0.359388,0.199140,0.000054,0,0
+count,count_0Q,[],0,Chaotic Logistic,43,0.373956,0.207181,0.000089,200257,252.33203673362732
+count,count_0Q,[],0,Chaotic Logistic,44,0.365430,0.204743,0.000066,200257,245.88679671287537
+count,count_0Q,[],0,Damped Oscillator,42,0.119347,0.019818,0.000445,0,0
+count,count_0Q,[],0,Damped Oscillator,43,0.395787,0.218100,0.000418,200257,243.05208086967468
+count,count_0Q,[],0,Damped Oscillator,44,0.213111,0.062362,0.000435,200257,242.20680499076843
+count,count_0Q,[],0,Square Wave,42,0.698835,1.254858,0.291079,0,0
+count,count_0Q,[],0,Square Wave,43,0.706135,1.307826,0.274187,200257,236.0519711971283
+count,count_0Q,[],0,Square Wave,44,0.710914,1.324629,0.256613,200257,239.05973505973816
+count,count_2Q,"[2, 3]",2,Chaotic Logistic,42,0.373817,0.208973,0.000048,0,0
+count,count_2Q,"[2, 3]",2,Chaotic Logistic,43,0.346015,0.188724,0.000071,202553,14115.83091711998
+count,count_2Q,"[2, 3]",2,Chaotic Logistic,44,0.426526,0.242819,0.000075,202553,13908.831427812576
+count,count_2Q,"[2, 3]",2,Damped Oscillator,42,0.124416,0.022543,0.000419,0,0
+count,count_2Q,"[2, 3]",2,Damped Oscillator,43,0.138813,0.026079,0.000390,202553,13438.009786844254
+count,count_2Q,"[2, 3]",2,Damped Oscillator,44,0.085318,0.010092,0.000448,202553,13988.1819729805
+count,count_2Q,"[2, 3]",2,Square Wave,42,0.738879,1.091219,0.290094,0,0
+count,count_2Q,"[2, 3]",2,Square Wave,43,0.715741,1.167021,0.284659,202553,13516.107789039612
+count,count_2Q,"[2, 3]",2,Square Wave,44,0.737550,1.147859,0.279443,202553,13660.768903255463
+count,count_4Q,"[0, 1, 2, 3]",4,Chaotic Logistic,42,0.375314,0.204569,0.000090,0,0
+count,count_4Q,"[0, 1, 2, 3]",4,Chaotic Logistic,43,0.368880,0.199171,0.000069,204849,27619.73549079895
+count,count_4Q,"[0, 1, 2, 3]",4,Chaotic Logistic,44,0.375032,0.206474,0.000088,204849,27101.143265008926
+count,count_4Q,"[0, 1, 2, 3]",4,Damped Oscillator,42,0.153172,0.028504,0.034967,0,0
+count,count_4Q,"[0, 1, 2, 3]",4,Damped Oscillator,43,0.106534,0.016109,0.000455,204849,27229.484369039536
+count,count_4Q,"[0, 1, 2, 3]",4,Damped Oscillator,44,0.117645,0.018912,0.029958,204849,27790.402168035507
+count,count_4Q,"[0, 1, 2, 3]",4,Square Wave,42,0.944094,0.918580,0.261873,0,0
+count,count_4Q,"[0, 1, 2, 3]",4,Square Wave,43,0.710942,1.238068,0.279565,204849,26983.618567943573
+count,count_4Q,"[0, 1, 2, 3]",4,Square Wave,44,0.727507,1.343538,0.257038,204849,27675.1900370121

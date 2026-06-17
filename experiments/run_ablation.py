@@ -449,78 +449,75 @@ def run_ablation(args):
 
     # Run experiments
     all_results = []
-    total_runs = len(configs) * len(ABLATION_TASKS)
+    total_runs = len(configs) * len(ABLATION_TASKS) * args.seeds
     run_idx = 0
 
     for cfg in configs:
         for task_name in ABLATION_TASKS:
-            run_idx += 1
             display_name = TASK_DISPLAY_NAMES.get(task_name, task_name)
+            for seed_idx in range(args.seeds):
+                seed = args.seed_start + seed_idx
+                run_idx += 1
+                print(f"\n[{run_idx}/{total_runs}] Config: {cfg['name']} | Task: {display_name} | seed {seed}")
+                print("-" * 50)
 
-            print(f"\n[{run_idx}/{total_runs}] Config: {cfg['name']} | Task: {display_name}")
-            print("-" * 50)
+                torch.manual_seed(seed)
+                np.random.seed(seed)
 
-            # Set seed
-            torch.manual_seed(42)
-            np.random.seed(42)
-
-            task = get_task(task_name)
-            model = AblationQASAModel(
-                hidden_dim=hidden_dim, num_layers=num_layers,
-                seq_len=seq_len_train,
-                quantum_layer_indices=cfg['quantum_indices'],
-            ).to(device)
-
-            total_params, _ = count_parameters(model)
-            save_dir = os.path.join(checkpoints_dir, cfg['name'], task_name)
-
-            try:
-                start_time = time.time()
-                mae, mse, train_loss = train_and_evaluate(
-                    model, task, task_name, device, config, save_dir=save_dir
-                )
-                elapsed = time.time() - start_time
-
-                print(f"  => MAE: {mae:.6f}, MSE: {mse:.6f}, Time: {elapsed:.0f}s")
-
-                all_results.append({
-                    'ablation_type': cfg['type'],
-                    'config_name': cfg['name'],
+                save_dir = os.path.join(checkpoints_dir, cfg['name'], task_name, f'seed{seed}')
+                base_row = {
+                    'ablation_type': cfg['type'], 'config_name': cfg['name'],
                     'quantum_indices': str(cfg['quantum_indices']),
                     'n_quantum_layers': len(cfg['quantum_indices']),
-                    'task': display_name,
-                    'task_key': task_name,
-                    'mae': mae,
-                    'mse': mse,
-                    'train_loss': train_loss,
-                    'total_params': total_params,
-                    'time_seconds': elapsed,
-                })
-            except Exception as e:
-                print(f"  ERROR: {e}")
-                traceback.print_exc()
-                all_results.append({
-                    'ablation_type': cfg['type'],
-                    'config_name': cfg['name'],
-                    'quantum_indices': str(cfg['quantum_indices']),
-                    'n_quantum_layers': len(cfg['quantum_indices']),
-                    'task': display_name,
-                    'task_key': task_name,
-                    'mae': np.inf,
-                    'mse': np.inf,
-                    'train_loss': np.inf,
-                    'total_params': total_params,
-                    'time_seconds': 0,
-                })
+                    'task': display_name, 'task_key': task_name, 'seed': seed,
+                }
 
-            del model
+                # Resumable: reuse an already-trained checkpoint
+                ckpt = os.path.join(save_dir, 'best_model.pth')
+                if os.path.exists(ckpt):
+                    try:
+                        d = torch.load(ckpt, map_location='cpu', weights_only=False)
+                        print(f"  (cached) MAE: {d['mae']:.6f}, MSE: {d['mse']:.6f}")
+                        all_results.append({**base_row, 'mae': d['mae'], 'mse': d['mse'],
+                                            'train_loss': d.get('best_loss', np.nan),
+                                            'total_params': 0, 'time_seconds': 0})
+                        continue
+                    except Exception as e:
+                        print(f"  (cache read failed, retraining: {e})")
+
+                task = get_task(task_name)
+                model = AblationQASAModel(
+                    hidden_dim=hidden_dim, num_layers=num_layers,
+                    seq_len=seq_len_train,
+                    quantum_layer_indices=cfg['quantum_indices'],
+                ).to(device)
+                total_params, _ = count_parameters(model)
+
+                try:
+                    start_time = time.time()
+                    mae, mse, train_loss = train_and_evaluate(
+                        model, task, task_name, device, config, save_dir=save_dir
+                    )
+                    elapsed = time.time() - start_time
+                    print(f"  => MAE: {mae:.6f}, MSE: {mse:.6f}, Time: {elapsed:.0f}s")
+                    all_results.append({**base_row, 'mae': mae, 'mse': mse,
+                                        'train_loss': train_loss,
+                                        'total_params': total_params, 'time_seconds': elapsed})
+                except Exception as e:
+                    print(f"  ERROR: {e}")
+                    traceback.print_exc()
+                    all_results.append({**base_row, 'mae': np.inf, 'mse': np.inf,
+                                        'train_loss': np.inf,
+                                        'total_params': total_params, 'time_seconds': 0})
+
+                del model
 
     # Save results CSV
     results_csv = os.path.join(results_dir, f"ablation_results_{timestamp}.csv")
     with open(results_csv, 'w', newline='') as f:
         writer = csv.DictWriter(f, fieldnames=[
             'ablation_type', 'config_name', 'quantum_indices', 'n_quantum_layers',
-            'task', 'mae', 'mse', 'train_loss', 'total_params', 'time_seconds',
+            'task', 'seed', 'mae', 'mse', 'train_loss', 'total_params', 'time_seconds',
         ])
         writer.writeheader()
         for r in all_results:
@@ -567,10 +564,15 @@ def main():
                         help="Specific configs to run (e.g., pos_Q_first count_0Q)")
     parser.add_argument('--dry-run', action='store_true',
                         help="Quick sanity check with 1 epoch")
+    parser.add_argument('--seeds', type=int, default=1,
+                        help="Number of seeds per config/task (default: 1)")
+    parser.add_argument('--seed-start', type=int, default=42,
+                        help="First seed (use 43 to add to the published seed-42 results)")
     args = parser.parse_args()
 
     if args.dry_run:
         args.epochs = 1
+        args.seeds = 1
         if args.configs is None:
             args.configs = ['pos_Q_last', 'count_0Q']
         print("=== DRY RUN MODE (1 epoch) ===\n")

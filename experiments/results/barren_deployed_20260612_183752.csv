@@ -1,0 +1,2 @@
+Circuit,Qubits,Angles,EntanglingLayers,Cost,Samples,Mean_Var,Max_Var,Min_Var,Status
+QASA deployed (4 variational layers),9,36,3,z0,200,1.079311e-03,2.958886e-03,0.000000e+00,Trainable
